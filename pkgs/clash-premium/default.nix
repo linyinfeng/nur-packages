@@ -1,12 +1,13 @@
 { system, stdenv, fetchurl }:
 
 let
-  clashSystem = {
+  clashSystems = {
     "aarch64-linux" = "linux-armv8";
     "i686-linux" = "linux-386";
     "x86_64-darwin" = "darwin-amd64";
     "x86_64-linux" = "linux-amd64";
-  }.${system};
+  };
+  clashSystem = clashSystems.${system};
 in
 stdenv.mkDerivation rec {
   name = "clash-premium-${version}";
@@ -25,9 +26,10 @@ stdenv.mkDerivation rec {
     chmod +x $out/bin/clash-premium
   '';
 
-  meta = {
+  meta = with stdenv.lib; {
     homepage = https://github.com/Dreamacro/clash;
     description = "Close-sourced pre-built Clash binary with TUN support and more";
-    license = stdenv.lib.licenses.unfree;
+    license = licenses.unfree;
+    platforms = attrNames clashSystems;
   };
 }
