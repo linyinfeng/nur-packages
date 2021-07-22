@@ -21,7 +21,6 @@
           clash-premium = mkApp "clash-premium" { };
           dpt-rp1-py = mkApp "dpt-rp1-py" { name = "dptrp1"; };
           godns = mkApp "godns" { };
-          musicbox = mkApp "musicbox" { };
           trojan = mkApp "trojan" { };
           vlmcsd = mkApp "vlmcsd" { };
         };
