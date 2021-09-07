@@ -33,7 +33,7 @@ jobs:
           pkgs/_build
         key: ${{ runner.os }}-${{ hashFiles('pkgs/updater/src/*') }}-${{ hashFiles('pkgs/_build/generated.nix') }}
         restore-keys: |
-          ${{ runner.os }}-${{ hashFiles('pkgs/updater/src/*') }}
+          ${{ runner.os }}-${{ hashFiles('pkgs/updater/src/*') }}-
     - name: Run updater
       run: |
         cp ./pkgs/sources.nix /tmp/old-sources.nix
