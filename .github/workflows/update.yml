@@ -26,7 +26,7 @@ jobs:
       with:
         name: linyinfeng
         signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
-    - name: Cache multiple paths
+    - name: Cache
       uses: actions/cache@main
       with:
         path: |
