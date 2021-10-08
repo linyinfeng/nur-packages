@@ -55,6 +55,19 @@
     };
 
   };
+  commit-notifier = {
+    pname = "commit-notifier";
+    version = "c7544d340c2024570a533a50e9379b9ab169bd34";
+    src = fetchgit {
+      url = "https://github.com/linyinfeng/commit-notifier.git";
+      rev = "c7544d340c2024570a533a50e9379b9ab169bd34";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sha256 = "0xry0p9alwrk5ka31j6vpfrnq5wvjk3rfqqyr9lrr4ifzz51v21n";
+    };
+
+  };
   dpt-rp1-py = {
     pname = "dpt-rp1-py";
     version = "v0.1.13";
@@ -83,10 +96,10 @@
   };
   icalingua = {
     pname = "icalingua";
-    version = "v2.3.0";
+    version = "v2.3.2";
     src = fetchurl {
-      sha256 = "0k765czi6516wwb66vsqljz8z5f1j8hnl2acs3ggjfpf23zx4c1s";
-      url = "https://github.com/Clansty/Icalingua/releases/download/v2.3.0/app-x86_64.asar";
+      sha256 = "1697xcp5rsf18q4f6k9mbg77y33s6mgzx6af8r3nkgzjk6gkajcq";
+      url = "https://github.com/Clansty/Icalingua/releases/download/v2.3.2/app-x86_64.asar";
     };
 
   };
