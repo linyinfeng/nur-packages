@@ -48,5 +48,6 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/Clansty/Icalingua";
     license = licenses.mit;
     platforms = [ "x86_64-linux" ];
+    maintainers = with maintainers; [ yinfeng ];
   };
 }

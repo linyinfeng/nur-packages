@@ -1,7 +1,6 @@
 { sources, rustPlatform, lib, pkg-config, openssl, libgit2, sqlite }:
 
-rustPlatform.buildRustPackage
-rec {
+rustPlatform.buildRustPackage rec {
   inherit (sources.commit-notifier) pname version src;
 
   cargoLock.lockFile = "${src}/Cargo.lock";
@@ -16,6 +15,9 @@ rec {
   ];
 
   meta = with lib; {
+    homepage = "https://github.com/linyinfeng/commit-notifier";
+    description = "A simple telegram bot monitoring commit status";
     license = licenses.mit;
+    maintainers = with maintainers; [ yinfeng ];
   };
 }

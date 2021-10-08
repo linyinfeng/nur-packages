@@ -1,4 +1,5 @@
 { sources, lib, python3Packages }:
+
 python3Packages.buildPythonApplication rec {
   inherit (sources.dpt-rp1-py) pname version src;
 
@@ -20,5 +21,6 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://github.com/janten/dpt-rp1-py";
     description = "Python script to manage Sony DPT-RP1 without Digital Paper App";
     license = licenses.mit;
+    maintainers = with maintainers; [ yinfeng ];
   };
 }

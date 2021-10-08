@@ -1,4 +1,5 @@
 { sources, lib, python3Packages }:
+
 python3Packages.buildPythonApplication rec {
   inherit (sources.telegram-send) pname version src;
 
@@ -12,5 +13,6 @@ python3Packages.buildPythonApplication rec {
     homepage = "https://github.com/rahiel/telegram-send";
     description = "Send messages and files over Telegram from the command-line";
     license = licenses.mit;
+    maintainers = with maintainers; [ yinfeng ];
   };
 }

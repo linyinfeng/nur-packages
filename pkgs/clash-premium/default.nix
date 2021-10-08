@@ -1,4 +1,5 @@
 { sources, system, stdenvNoCC, lib }:
+
 let
   systems = [ "aarch64-linux" "i686-linux" "x86_64-darwin" "x86_64-linux" ];
 in
@@ -19,5 +20,6 @@ stdenvNoCC.mkDerivation rec {
     description = "Close-sourced pre-built Clash binary with TUN support and more";
     license = licenses.unfree;
     platforms = systems;
+    maintainers = with maintainers; [ yinfeng ];
   };
 }
