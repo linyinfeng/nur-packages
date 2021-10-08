@@ -13,6 +13,5 @@ buildGoModule rec {
     description = "A dynamic DNS client tool supports AliDNS, Cloudflare, Google Domains, DNSPod, HE.net & DuckDNS & DreamHost, etc, written in Go";
     homepage = "https://github.com/TimothyYe/godns";
     license = licenses.asl20;
-    maintainers = with maintainers; [ yinfeng ];
   };
 }

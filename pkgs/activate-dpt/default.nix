@@ -22,7 +22,6 @@ runCommand "${name}"
   meta = with lib; {
     description = "Python script to activate Ethernet over USB of Sony DPT-RP1";
     license = licenses.mit;
-    maintainers = with maintainers; [ yinfeng ];
   };
 } ''
   makeWrapper "${pyPkg}/bin/activate-dpt.py" "$out/bin/activate-dpt" \
