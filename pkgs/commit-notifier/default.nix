@@ -2,9 +2,7 @@
 
 rustPlatform.buildRustPackage rec {
   inherit (sources.commit-notifier) pname version src;
-
-  cargoLock.lockFile = "${src}/Cargo.lock";
-
+  cargoLock = sources.commit-notifier.cargoLock;
   nativeBuildInputs = [
     pkg-config
   ];

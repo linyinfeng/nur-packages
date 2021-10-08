@@ -1,4 +1,4 @@
-{ pkgs, sources ? pkgs.callPackage ./sources.nix { } }:
+{ pkgs, sources ? pkgs.callPackage ./_sources/generated.nix { } }:
 
 {
   activate-dpt = pkgs.callPackage ./activate-dpt { };
