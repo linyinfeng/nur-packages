@@ -1,13 +1,12 @@
-
-{ writeShellScriptBin,
-  nixUnstable,
-  nixpkgs-fmt,
-  path,
-  sourcesFile ? "./pkgs/_sources/generated.nix",
-  tmpDir ? "/tmp/linyinfeng-nur-packages-update",
-  oldSourcesFile ? "${tmpDir}/old-generated.nix",
-  changelogFile ? "${tmpDir}/changelog",
-  alternativeEnvFile ? "${tmpDir}/github-env"
+{ writeShellScriptBin
+, nixUnstable
+, nixpkgs-fmt
+, path
+, sourcesFile ? "./pkgs/_sources/generated.nix"
+, tmpDir ? "/tmp/linyinfeng-nur-packages-update"
+, oldSourcesFile ? "${tmpDir}/old-generated.nix"
+, changelogFile ? "${tmpDir}/changelog"
+, alternativeEnvFile ? "${tmpDir}/github-env"
 }:
 
 writeShellScriptBin "update" ''
