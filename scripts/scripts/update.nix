@@ -2,6 +2,7 @@
 { writeShellScriptBin,
   nixUnstable,
   nixpkgs-fmt,
+  path,
   sourcesFile ? "./pkgs/_sources/generated.nix",
   tmpDir ? "/tmp/linyinfeng-nur-packages-update",
   oldSourcesFile ? "${tmpDir}/old-generated.nix",
@@ -24,7 +25,10 @@ writeShellScriptBin "update" ''
   cp ${sourcesFile} ${oldSourcesFile}
 
   # perform update
-  pushd pkgs; ${nixUnstable}/bin/nix shell ..#updater --command updater "$@"; popd
+  pushd pkgs;
+  export NIX_PATH="nixpkgs=${path}"
+  ${nixUnstable}/bin/nix shell ..#updater --command updater "$@";
+  popd
   ${nixpkgs-fmt}/bin/nixpkgs-fmt ${sourcesFile}
   # update done
 
