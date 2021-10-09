@@ -1,103 +1,68 @@
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    flake-utils.url = "github:numtide/flake-utils";
+    flake-utils-plus.url = "github:gytis-ivaskevicius/flake-utils-plus";
   };
 
-  outputs = { self, nixpkgs, flake-utils }:
+  outputs = { self, nixpkgs, flake-utils-plus }@inputs:
     let
-      utils = flake-utils.lib;
+      utils = flake-utils-plus.lib;
+      inherit (nixpkgs) lib;
+      inherit (self.lib) makePackages makeApps appNames;
     in
-    (utils.eachDefaultSystem (system:
-      let
-        importPkgs = p: import p {
-          inherit system;
-          config = { allowUnfree = true; };
-        };
-        pkgs = importPkgs nixpkgs;
-        inherit (pkgs) lib;
-
-        sources = pkgs.callPackage ./pkgs/_sources/generated.nix { };
-        packages = import ./pkgs
-          {
-            inherit pkgs;
-          };
-        platformFilter = sys: p:
-          if p.meta ? platforms
-          then pkgs.lib.elem sys p.meta.platforms
-          else true;
-        filteredPackages = pkgs.lib.filterAttrs
-          (_: p: lib.isDerivation p && platformFilter system p)
-          packages;
-
-        appNames = {
-          "clash-for-windows" = {
-            "cfw" = "cfw";
-          };
-          "dpt-rp1-py" = {
-            "dptrp1" = "dptrp1";
-          };
-          "wemeet" = {
-            "wemeet" = "wemeetapp";
-          };
-        };
-        getAppsNames = p: appNames.${p} or { ${p} = p; };
-        mkApps = p: drv:
-          lib.mapAttrsToList
-            (appName: exec:
-              lib.nameValuePair
-                appName
-                (utils.mkApp { inherit drv; name = exec; }))
-            (getAppsNames p);
-        apps = lib.listToAttrs (lib.flatten (lib.mapAttrsToList mkApps filteredPackages));
-      in
+    utils.mkFlake
       {
-        inherit sources;
-        packages = filteredPackages;
-        inherit apps;
+        inherit self inputs;
 
-        checks = flake-utils.lib.flattenTree {
-          packages = pkgs.lib.recurseIntoAttrs self.packages.${system};
-        };
-        devShell =
-          let
-            scripts = pkgs.callPackage ./scripts { };
-            simple = pkgs.mkShell {
-              packages = [
-                # currently nothing
-              ];
+        lib = import ./lib { inherit (nixpkgs) lib; };
+        nixosModules = import ./modules;
+        overlays = import ./overlays // {
+          linyinfeng = final: prev: {
+            linyinfeng = makePackages prev;
+          };
+          singleRepoNur = final: prev: {
+            nur = prev.lib.recursiveUpdate prev.nur {
+              repos.linyinfeng = makePackages prev;
             };
-            withUpdater = pkgs.mkShell {
-              inputsFrom = [
-                simple
-                self.packages.${system}.updater.env
-              ];
-              packages = [
-                pkgs.nixpkgs-fmt
-                pkgs.cabal-install
-                pkgs.ormolu
-                pkgs.nix-linter
-                pkgs.fd
-              ] ++ (with scripts; [
-                update
-                lint
-              ]);
-            };
-          in
-          if (self.packages.${system} ? updater) then withUpdater else simple;
-      })) //
-    {
-      lib = import ./lib { inherit (nixpkgs) lib; };
-      nixosModules = import ./modules;
-      overlays = {
-        linyinfeng = final: prev: {
-          linyinfeng = self.packages.${final.system};
-        };
-        singleRepoNur = final: prev: {
-          nur = prev.lib.recursiveUpdate prev.nur {
-            repos.linyinfeng = self.packages.${final.system};
           };
         };
-      } // import ./overlays;
-    };
+
+        channels.nixpkgs.config = {
+          allowUnfree = true;
+        };
+
+        outputsBuilder = channels:
+          let
+            pkgs = channels.nixpkgs;
+          in
+          rec {
+            packages = lib.filterAttrs (_attrName: lib.isDerivation) (makePackages pkgs);
+            apps = makeApps packages appNames;
+            devShell =
+              let
+                scripts = pkgs.callPackage ./scripts { };
+                simple = pkgs.mkShell {
+                  packages = [
+                    # currently nothing
+                  ];
+                };
+                withUpdater = pkgs.mkShell {
+                  inputsFrom = [
+                    simple
+                    packages.updater.env
+                  ];
+                  packages = [
+                    pkgs.nixpkgs-fmt
+                    pkgs.cabal-install
+                    pkgs.ormolu
+                  ] ++ (with scripts; [
+                    update
+                    lint
+                  ]);
+                };
+              in
+              if (packages ? updater) then withUpdater else simple;
+            checks = packages;
+          };
+      };
 }
