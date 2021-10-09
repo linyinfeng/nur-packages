@@ -5,7 +5,10 @@
   };
 
   outputs = { self, nixpkgs, flake-utils }:
-    (flake-utils.lib.eachDefaultSystem (system:
+    let
+      utils = flake-utils.lib;
+    in
+    (utils.eachDefaultSystem (system:
       let
         importPkgs = p: import p {
           inherit system;
@@ -17,39 +20,41 @@
         sources = pkgs.callPackage ./pkgs/_sources/generated.nix { };
         packages = import ./pkgs
           {
-            inherit pkgs sources;
-          } // {
-          # only include updater
-          updater = pkgs.callPackage ./pkgs/updater { };
-        };
+            inherit pkgs;
+          };
         platformFilter = sys: p:
           if p.meta ? platforms
           then pkgs.lib.elem sys p.meta.platforms
           else true;
-        filteredPackages = pkgs.lib.filterAttrs (_: platformFilter system) packages;
+        filteredPackages = pkgs.lib.filterAttrs
+          (_: p: lib.isDerivation p && platformFilter system p)
+          packages;
 
-        mkApp = drvName: cfg:
-          if self.packages.${system} ? ${drvName}
-          then {
-            "${drvName}" = flake-utils.lib.mkApp ({ drv = self.packages.${system}.${drvName}; } // cfg);
-          }
-          else { };
+        appNames = {
+          "clash-for-windows" = {
+            "cfw" = "cfw";
+          };
+          "dpt-rp1-py" = {
+            "dptrp1" = "dptrp1";
+          };
+          "wemeet" = {
+            "wemeet" = "wemeetapp";
+          };
+        };
+        getAppsNames = p: appNames.${p} or { ${p} = p; };
+        mkApps = p: drv:
+          lib.mapAttrsToList
+            (appName: exec:
+              lib.nameValuePair
+                appName
+                (utils.mkApp { inherit drv; name = exec; }))
+            (getAppsNames p);
+        apps = lib.listToAttrs (lib.flatten (lib.mapAttrsToList mkApps filteredPackages));
       in
       {
         inherit sources;
         packages = filteredPackages;
-        apps =
-          mkApp "activate-dpt" { } //
-          mkApp "clash-for-windows" { name = "cfw"; } //
-          mkApp "clash-premium" { } //
-          mkApp "dpt-rp1-py" { name = "dptrp1"; } //
-          mkApp "godns" { } //
-          mkApp "icalingua" { } //
-          mkApp "telegram-send" { } //
-          mkApp "trojan" { } //
-          mkApp "updater" { } //
-          mkApp "vlmcsd" { } //
-          mkApp "wemeet" { name = "wemeetapp"; };
+        inherit apps;
 
         checks = flake-utils.lib.flattenTree {
           packages = pkgs.lib.recurseIntoAttrs self.packages.${system};
