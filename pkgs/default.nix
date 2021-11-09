@@ -2,6 +2,12 @@
 
 let
   inherit (pkgs) lib newScope;
+  mkDeprecated = name: alternativeText: alternative:
+    builtins.trace
+      ''
+        "nur.repos.linyinfeng.${name}"/"github:linyinfeng/nur-packages#${name}" deprecated, please use ${alternativeText} instead
+      ''
+      alternative;
 in
 
 lib.makeScope newScope (
@@ -22,7 +28,8 @@ lib.makeScope newScope (
     fishPlugins = lib.recurseIntoAttrs (callPackage ./fish-plugins {
       inherit (pkgs.fishPlugins) buildFishPlugin;
     });
-    godns = callPackage ./godns { };
+    godns = mkDeprecated "godns" "nixpkgs#godns"
+      (pkgs.godns or callPackage ./godns { });
     icalingua = callPackage ./icalingua { };
     telegram-send = callPackage ./telegram-send { };
     trojan = callPackage ./trojan { };
