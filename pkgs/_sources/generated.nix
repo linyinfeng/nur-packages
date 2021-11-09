@@ -19,34 +19,34 @@
   };
   clash-premium-aarch64-linux = {
     pname = "clash-premium-aarch64-linux";
-    version = "2021.09.15";
+    version = "2021.11.08";
     src = fetchurl {
-      url = "https://github.com/Dreamacro/clash/releases/download/premium/clash-linux-armv8-2021.09.15.gz";
-      sha256 = "05d8zm4i3s1nymn2cz952niqh6x7skz0gi6r50faqqbhp2sqx356";
+      url = "https://github.com/Dreamacro/clash/releases/download/premium/clash-linux-armv8-2021.11.08.gz";
+      sha256 = "0qnrh2nlkjf9hm87lh2bnyn6m3jd46sjmr213flwwj39h8wqflw2";
     };
   };
   clash-premium-i686-linux = {
     pname = "clash-premium-i686-linux";
-    version = "2021.09.15";
+    version = "2021.11.08";
     src = fetchurl {
-      url = "https://github.com/Dreamacro/clash/releases/download/premium/clash-linux-386-2021.09.15.gz";
-      sha256 = "1nwf3rvd6fk3rgghcdjf3ck1jmf9gzclsnnd0ill37lmbcflr91a";
+      url = "https://github.com/Dreamacro/clash/releases/download/premium/clash-linux-386-2021.11.08.gz";
+      sha256 = "01w66akjvhgr8kv349nf12pk03kxk2l4wzqjf2rm7pbxl99412vc";
     };
   };
   clash-premium-x86_64-darwin = {
     pname = "clash-premium-x86_64-darwin";
-    version = "2021.09.15";
+    version = "2021.11.08";
     src = fetchurl {
-      url = "https://github.com/Dreamacro/clash/releases/download/premium/clash-darwin-amd64-2021.09.15.gz";
-      sha256 = "08mmar0ws7ccjmajvlg1mcg84w8fqd3hfafiqc11pkqfgpsk9dnv";
+      url = "https://github.com/Dreamacro/clash/releases/download/premium/clash-darwin-amd64-2021.11.08.gz";
+      sha256 = "1dj11yqlfgpyk3xgb2zl09a676b3l72qvrh0caaww5328d50bnwd";
     };
   };
   clash-premium-x86_64-linux = {
     pname = "clash-premium-x86_64-linux";
-    version = "2021.09.15";
+    version = "2021.11.08";
     src = fetchurl {
-      url = "https://github.com/Dreamacro/clash/releases/download/premium/clash-linux-amd64-2021.09.15.gz";
-      sha256 = "1qmmc8iiali743wzy6xpa03722mk9z3wdn7741bixhc8508b5061";
+      url = "https://github.com/Dreamacro/clash/releases/download/premium/clash-linux-amd64-2021.11.08.gz";
+      sha256 = "0ry27dh7idp5hhgwlpifvayf0bswnkdh1rb3r5brrhbqgl7wkp7d";
     };
   };
   commit-notifier = {
@@ -91,18 +91,6 @@
       deepClone = false;
       leaveDotGit = false;
       sha256 = "1jgkfn5kfnx98xs0dmym1h9mv1mrzlglk7x0fzs2jlc56c18w9dk";
-    };
-  };
-  godns = {
-    pname = "godns";
-    version = "v2.5";
-    src = fetchgit {
-      url = "https://github.com/TimothyYe/godns";
-      rev = "v2.5";
-      fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sha256 = "11735nard9djfc4gbxnp2sc60aw9f6jkm2h9yvhm754abnchbbc9";
     };
   };
   icalingua = {
