@@ -29,7 +29,7 @@ lib.makeScope newScope (
       inherit (pkgs.fishPlugins) buildFishPlugin;
     });
     godns = mkDeprecated "godns" "nixpkgs#godns"
-      (pkgs.godns or callPackage ./godns { });
+      (pkgs.godns or (callPackage ./godns { }));
     icalingua = callPackage ./icalingua { };
     telegram-send = callPackage ./telegram-send { };
     trojan = callPackage ./trojan { };
