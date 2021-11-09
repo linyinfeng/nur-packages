@@ -22,6 +22,7 @@ buildGoModule rec {
     description = "A dynamic DNS client tool supports AliDNS, Cloudflare, Google Domains, DNSPod, HE.net & DuckDNS & DreamHost, etc";
     homepage = "https://github.com/TimothyYe/godns";
     license = licenses.asl20;
-    maintainers = with maintainers; [ yinfeng ];
+    # Broken on 21.05
+    # maintainers = with maintainers; [ yinfeng ];
   };
 }
