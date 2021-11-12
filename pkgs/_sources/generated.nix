@@ -3,10 +3,10 @@
 {
   clash-for-windows = {
     pname = "clash-for-windows";
-    version = "0.18.7";
+    version = "0.18.8";
     src = fetchurl {
-      url = "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.18.7/Clash.for.Windows-0.18.7-x64-linux.tar.gz";
-      sha256 = "0sxxjwdqqnvips6kici4rczy5i0s0a56rzpk2mcnvnwj77cgk604";
+      url = "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.18.8/Clash.for.Windows-0.18.8-x64-linux.tar.gz";
+      sha256 = "1a5bj6kwv54wwafan3c957cbyhzf5qni8g01808fgvja0kdzgl33";
     };
   };
   clash-for-windows-icon = {
@@ -135,14 +135,14 @@
   };
   plugin-git = {
     pname = "plugin-git";
-    version = "2df7fe23543fe8147c7be23bb85b6c6448ad023e";
+    version = "e4484b870c11fd010fe8f6071b79a50f7a0eec5a";
     src = fetchgit {
       url = "https://github.com/jhillyerd/plugin-git";
-      rev = "2df7fe23543fe8147c7be23bb85b6c6448ad023e";
+      rev = "e4484b870c11fd010fe8f6071b79a50f7a0eec5a";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "1c2grvkd8w4jybw5rs41w4lpq4c2yx1jcbnzfpnmc3c2445k9jlh";
+      sha256 = "18yxq0kzadn9rkdswm0n35l27h6c6l7irz8syx14067zrmsby364";
     };
   };
   replay-fish = {
