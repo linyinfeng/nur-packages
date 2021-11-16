@@ -72,10 +72,8 @@ jobs:
           token: ${{ secrets.TELEGRAM_TOKEN }}
           format: markdown
           message: |
-            *Automated update*
+            linyinfeng/nur-packages [automated update](https://github.com/${{ github.repository }}/pull/${{ steps.cpr.outputs.pull-request-number }})
 
             ```
             ${{ env.UPDATER_CHANGELOG }}
             ```
-
-            [Pull Request](https://github.com/${{ github.repository }}/pull/${{ steps.cpr.outputs.pull-request-number }})
