@@ -50,7 +50,7 @@ jobs:
     - name: Craete pull request
       uses: peter-evans/create-pull-request@main
       with:
-        token: '${{ secrets.PAT_FOR_CREATE_PULL_REQUEST }}'
+        # token: '${{ secrets.PAT_FOR_CREATE_PULL_REQUEST }}'
         commit-message: |
           ${{ env.COMMIT_TITLE }}${{ env.COMMIT_BODY }}
         committer: github-actions <github-actions@github.com>
