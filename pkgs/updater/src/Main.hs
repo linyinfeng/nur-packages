@@ -24,7 +24,6 @@ packageSet = do
   icalingua
   icalinguaIcon
   wemeet
-  ghPkg "actions" "runner"
 
 fishPlugins :: PackageSet ()
 fishPlugins = do
