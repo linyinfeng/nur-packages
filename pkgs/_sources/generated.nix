@@ -157,6 +157,18 @@
       sha256 = "1aa3a7jdb8a9z9jd9ckf449zmf7cl7yl47yp94srqj4iv1amizs3";
     };
   };
+  runner = {
+    pname = "runner";
+    version = "v2.284.0";
+    src = fetchgit {
+      url = "https://github.com/actions/runner";
+      rev = "v2.284.0";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sha256 = "05zi3ggw03zsnf9vjs5z2mbpzxrzlgjgsnywzm76i07rnk6hw795";
+    };
+  };
   telegram-send = {
     pname = "telegram-send";
     version = "2eb23bde734137b10da80fdf2e8a48d34f074454";
