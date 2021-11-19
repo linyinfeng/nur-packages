@@ -62,18 +62,8 @@ jobs:
           ${{ env.UPDATER_CHANGELOG }}
           ```
         branch: 'create-pull-request/update'
+        assignees: |
+          linyinfeng
+        reviewers: |
+          linyinfeng
         delete-branch: true
-    - name: Send notification
-      uses: appleboy/telegram-action@master
-      if: ${{ steps.cpr.outputs.pull-request-operation == 'created' ||
-              steps.cpr.outputs.pull-request-operation == 'updated' }}
-      with:
-          to: ${{ secrets.TELEGRAM_TO }}
-          token: ${{ secrets.TELEGRAM_TOKEN }}
-          format: markdown
-          message: |
-            linyinfeng/nur-packages [automated update](https://github.com/${{ github.repository }}/pull/${{ steps.cpr.outputs.pull-request-number }})
-
-            ```
-            ${{ env.UPDATER_CHANGELOG }}
-            ```
