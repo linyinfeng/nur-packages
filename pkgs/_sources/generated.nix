@@ -51,17 +51,17 @@
   };
   commit-notifier = {
     pname = "commit-notifier";
-    version = "bf80767281f36c3765a922267e21bc314d79f73c";
+    version = "1e1e554c7d2b82e53afba3c9f17267e92b46e99f";
     src = fetchgit {
       url = "https://github.com/linyinfeng/commit-notifier.git";
-      rev = "bf80767281f36c3765a922267e21bc314d79f73c";
+      rev = "1e1e554c7d2b82e53afba3c9f17267e92b46e99f";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "1zr1jx47w50gv2pfrp84wckvbhvfmdbad4w79x2l7kbwkkksm943";
+      sha256 = "11x17pnfpnnij913h5m3qxn5rxpi1sdvjqhkasybvz2rjj83rwh9";
     };
     cargoLock = {
-      lockFile = ./commit-notifier-bf80767281f36c3765a922267e21bc314d79f73c/Cargo.lock;
+      lockFile = ./commit-notifier-1e1e554c7d2b82e53afba3c9f17267e92b46e99f/Cargo.lock;
       outputHashes = { };
     };
   };
