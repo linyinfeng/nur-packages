@@ -55,7 +55,8 @@ jobs:
         commit-message: |
           ${{ env.COMMIT_TITLE }}${{ env.COMMIT_BODY }}
         title: Automated update
-        author: Nano <nano@linyinfeng.com>
+        author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
+        committer: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
         body: |
           ###### Changelog
 
