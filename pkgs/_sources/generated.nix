@@ -95,10 +95,10 @@
   };
   icalingua = {
     pname = "icalingua";
-    version = "v2.4.3";
+    version = "v2.4.4-Deus-non-vult";
     src = fetchurl {
-      url = "https://github.com/Clansty/Icalingua/releases/download/v2.4.3/app-x86_64.asar";
-      sha256 = "1v4a60alfw2qxczv9sd4y5d72q7xy198lbbmp9nlzvakj39cid6z";
+      url = "https://github.com/Clansty/Icalingua/releases/download/v2.4.4-Deus-non-vult/app-x86_64.asar";
+      sha256 = "10c35qcanjm1f0hbgvf8wia7qf3l5cpay4gwgxsjvjcza3fwsr5d";
     };
   };
   icalinguaIcon = {
