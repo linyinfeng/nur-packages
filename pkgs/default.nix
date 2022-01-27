@@ -29,6 +29,7 @@ lib.makeScope newScope (
     trojan = callPackage ./trojan { };
     vlmcsd = callPackage ./vlmcsd { };
     wemeet = callPackage ./wemeet { };
+    yacd = callPackage ./yacd { };
   } // lib.optionalAttrs (! (pkgs ? godns)) {
     godns = callPackage ./godns { };
   })
