@@ -27,7 +27,7 @@
           rec {
             packages = utils.flattenTree (makePackages pkgs);
             apps = makeApps packages appNames;
-            devShell =
+            devShells.default =
               let
                 scripts = pkgs.callPackage ./scripts { };
                 simple = pkgs.mkShell {
