@@ -14,7 +14,7 @@
       {
         inherit self inputs;
 
-        sharedOverlays = builtins.attrValues (import ./overlays);
+        sharedOverlays = builtins.attrValues (self.overlays);
         channels.nixpkgs.config = {
           allowUnfree = true;
           allowAliases = false;
@@ -68,6 +68,5 @@
 
         lib = import ./lib { inherit (nixpkgs) lib; };
         nixosModules = import ./modules;
-
       };
 }
