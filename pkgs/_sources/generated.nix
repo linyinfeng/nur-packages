@@ -127,14 +127,14 @@
   };
   nix-gc-s3 = {
     pname = "nix-gc-s3";
-    version = "6fd8d71fecc29cdd1dcd82f831ca504910125fa4";
+    version = "26729a21d52c3c94c2d1e6e08e699f267a5f1f32";
     src = fetchgit {
       url = "https://github.com/linyinfeng/nix-gc-s3.git";
-      rev = "6fd8d71fecc29cdd1dcd82f831ca504910125fa4";
+      rev = "26729a21d52c3c94c2d1e6e08e699f267a5f1f32";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "19qag05mfdaqlczsab9sif0h7iaxn1a82b895vcqcf29hr4q4sja";
+      sha256 = "19v26g0kbwhcfz0mfr74j20z817nc97d3x0n2vadasxm7r715kks";
     };
   };
   pisces = {
