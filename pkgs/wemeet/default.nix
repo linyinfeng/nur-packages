@@ -12,14 +12,20 @@
 }:
 
 let
-  desktopItem = makeDesktopItem {
-    name = "wemeetapp";
-    desktopName = "Wemeet App";
-    exec = "wemeetapp %u";
-    icon = "wemeetapp";
-    categories = [ "AudioVideo" ];
+  desktopItem = makeDesktopItem
+    {
+      name = "wemeetapp";
+      desktopName = "Wemeet App";
+      exec = "wemeetapp %u";
+      icon = "wemeetapp";
+      categories = [ "AudioVideo" ];
+    } //
+  (if with lib; (versionAtLeast (versions.majorMinor trivial.version) "22.05")
+  then {
     mimeTypes = [ "x-scheme-handler/wemeet" ];
-  };
+  } else {
+    mimeType = "x-scheme-handler/wemeet";
+  });
 in
 qt5.mkDerivation rec {
   inherit (sources.wemeet) pname version src;
