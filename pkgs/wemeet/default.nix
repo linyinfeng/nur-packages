@@ -93,7 +93,7 @@ stdenv.mkDerivation rec {
   '';
 
   meta = with lib; {
-    broken = !(versionAtLeast (versions.majorMinor trivial.version) "22.05");
+    broken = !(versionAtLeast (versions.majorMinor trivial.version) "21.11");
     homepage = https://meeting.tencent.com;
     description = "Tencent Video Conferencing, tencent meeting";
     license = licenses.unfree;
