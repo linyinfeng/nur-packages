@@ -2,23 +2,13 @@
 , lib
 , autoPatchelfHook
 , stdenv
-, libsForQt5
-, makeWrapper
 , dpkg
 , makeDesktopItem
-, xorg
-, wayland
-, gmpxx
-, glib
-, harfbuzz
-, libglvnd
-, p11-kit
-, fontconfig
-, libpulseaudio
-, e2fsprogs
-, mtdev
-, alsa-lib
+, rsync
 , xkeyboard_config
+, qt5
+, xorg
+, libbsd
 }:
 
 let
@@ -31,13 +21,13 @@ let
     mimeTypes = [ "x-scheme-handler/wemeet" ];
   };
 in
-stdenv.mkDerivation rec {
+qt5.mkDerivation rec {
   inherit (sources.wemeet) pname version src;
 
   nativeBuildInputs = [
     autoPatchelfHook
-    makeWrapper
     dpkg
+    rsync
   ];
 
   unpackPhase = ''
@@ -45,26 +35,17 @@ stdenv.mkDerivation rec {
   '';
 
   buildInputs = [
-    wayland
-    gmpxx
-    glib
-    harfbuzz
-    libglvnd
-    p11-kit
-    fontconfig
-    libpulseaudio
-    e2fsprogs
-    mtdev
-    alsa-lib
-  ] ++ (with xorg; [
-    libSM
-    libX11
-  ]) ++ (with libsForQt5; [
-    fcitx-qt5
+    libbsd
+  ] ++ (with qt5; [
+    qtwebkit
+    qtx11extras
+  ]) ++ (with xorg; [
+    libXrandr
+    libXdamage
+    libXinerama
   ]);
 
   autoPatchelfIgnoreMissingDeps = [
-    "libQt5EglDeviceIntegration.so.5"
     "libcudart.so.9.0"
     "libcudnn.so.7"
     "libnvinfer.so.5"
@@ -73,18 +54,22 @@ stdenv.mkDerivation rec {
 
   installPhase = ''
     mkdir -p "$out"
-    cp -r opt "$out/opt"
+    # use system libraries instead
+    # https://github.com/NickCao/flakes/blob/ca564395aad0f2cdd45649a3769d7084a8a4fb18/pkgs/wemeet/default.nix
+    rsync -rv opt/ "$out/" \
+      --include "wemeet/lib/libwemeet*" \
+      --include "wemeet/lib/libxnn*" \
+      --include "wemeet/lib/libxcast.so" \
+      --include "wemeet/lib/libtquic.so" \
+      --exclude "wemeet/lib/*" \
+      --exclude "wemeet/plugins" \
+      --exclude "wemeet/icons" \
+      --exclude "wemeet/wemeetapp.sh"
 
     mkdir -p "$out/bin"
-    # 1. workaround for error:
-    #   xkbcommon: ERROR: failed to add default include path /usr/share/X11/xkb
-    #   manually set QT_XKB_CONFIG_ROOT
-    # 2. wayland workaround
-    #   set XDG_SESSION_TYPE, QT_QPA_PLATFORM, and unset WAYLAND_DISPLAY
-    makeWrapper "$out/opt/wemeet/bin/wemeetapp" "$out/bin/wemeetapp" \
-      --suffix QT_XKB_CONFIG_ROOT ":" "${xkeyboard_config}/share/X11/xkb" \
+    # wayland workaround: set XDG_SESSION_TYPE, and unset WAYLAND_DISPLAY
+    makeQtWrapper "$out/wemeet/bin/wemeetapp" "$out/bin/wemeetapp" \
       --set XDG_SESSION_TYPE x11 \
-      --set QT_QPA_PLATFORM xcb \
       --unset WAYLAND_DISPLAY
 
     mkdir -p "$out/share/applications"
@@ -95,7 +80,6 @@ stdenv.mkDerivation rec {
   '';
 
   meta = with lib; {
-    broken = !(versionAtLeast (versions.majorMinor trivial.version) "22.05");
     homepage = https://meeting.tencent.com;
     description = "Tencent Video Conferencing, tencent meeting";
     license = licenses.unfree;
