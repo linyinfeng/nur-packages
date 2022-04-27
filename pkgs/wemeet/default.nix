@@ -59,8 +59,6 @@ stdenv.mkDerivation rec {
   ] ++ (with xorg; [
     libSM
     libX11
-  ]) ++ (with libsForQt5; [
-    fcitx-qt5
   ]);
 
   autoPatchelfIgnoreMissingDeps = [
