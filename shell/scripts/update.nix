@@ -2,6 +2,7 @@
 , nixVersions
 , nixpkgs-fmt
 , nix-prefetch
+, nix-update
 , path
 , nixUpdateAttributes ? [
   "cf-terraforming"
@@ -46,7 +47,7 @@ function commit {
 echo "run nix-update"
 attributes=(${toString nixUpdateAttributes})
 for attribute in "''${attributes[@]}"; do
-  nix-update "$attribute" --write-commit-message "${nixUpdateCommitMessageFile}"
+  ${nix-update}/bin/nix-update "$attribute" --write-commit-message "${nixUpdateCommitMessageFile}"
   commit --file="${nixUpdateCommitMessageFile}"
   cat "${nixUpdateCommitMessageFile}" >> "${changelogFile}"
 done
