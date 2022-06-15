@@ -26,6 +26,7 @@ writeShellScriptBin "update" ''
 set -e
 
 export PATH=${nix-prefetch}/bin:$PATH
+export NIX_PATH="nixpkgs=${path}"
 
 rm -rf "${tmpDir}"
 mkdir -p "${tmpDir}"
@@ -62,7 +63,6 @@ popd
 ## run updater
 echo "run updater"
 pushd pkgs;
-export NIX_PATH="nixpkgs=${path}"
 ${nix}/bin/nix shell ..#updater --command updater "$@";
 popd
 ${nixpkgs-fmt}/bin/nixpkgs-fmt ${sourcesFile}
