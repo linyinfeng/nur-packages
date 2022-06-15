@@ -37,8 +37,8 @@ writeShellScriptBin "update" ''
   fi
 
   # setup git
-  git config --global uesr.name "${authorName}"
-  git config --global uesr.email "${authorEmail}"
+  git config --global user.name "${authorName}"
+  git config --global user.email "${authorEmail}"
   function commit {
     git add --all
     git commit "$@"
