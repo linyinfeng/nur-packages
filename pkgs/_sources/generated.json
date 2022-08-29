@@ -127,7 +127,7 @@
     "dot-tar": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./dot-tar-8719c34f81c94d50286a4120990eb0f134799fe1/Cargo.lock",
+                "./dot-tar-56769243e896b6894b99c5e5b849b71698a27d1f/Cargo.lock",
                 {}
             ]
         },
@@ -140,12 +140,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "8719c34f81c94d50286a4120990eb0f134799fe1",
-            "sha256": "sha256-3ztQpXt8ZtVtgyXF4M1FCgTqVIAPtyNFvISa8HbkPYo=",
+            "rev": "56769243e896b6894b99c5e5b849b71698a27d1f",
+            "sha256": "sha256-iRCs5Js0i3uhG2vrNnYKtdndRorTKjmlaNJA/5kyyaM=",
             "type": "git",
             "url": "https://github.com/linyinfeng/dot-tar.git"
         },
-        "version": "8719c34f81c94d50286a4120990eb0f134799fe1"
+        "version": "56769243e896b6894b99c5e5b849b71698a27d1f"
     },
     "dpt-rp1-py": {
         "cargoLocks": null,
@@ -174,11 +174,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-PWDWQQM4BIm+U4aZU8DSOfb9a34Pp8r5mZ/LuH41DSw=",
+            "sha256": "sha256-tWYOGjzLbpILzoWL15KJALvpCr71qzerhA2hu9GZp0w=",
             "type": "url",
-            "url": "https://github.com/icalingua-plus-plus/icalingua-plus-plus/releases/download/v2.7.0/app-x86_64.asar"
+            "url": "https://github.com/icalingua-plus-plus/icalingua-plus-plus/releases/download/v2.7.1/app-x86_64.asar"
         },
-        "version": "v2.7.0"
+        "version": "v2.7.1"
     },
     "icalingua-plus-plus-aur": {
         "cargoLocks": null,
@@ -191,12 +191,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "33518c5d410283589c2d0addba5fe962e7428dfe",
-            "sha256": "sha256-i62Sr3YfiAPcJ9ghr9ITQVMGXSUkmJ7xV9XmJ1PQhYQ=",
+            "rev": "a0c47807b82216d1a3d41218b7c4935d78b35db2",
+            "sha256": "sha256-ewzIhAvARo1WzULF1WhQNiCgWXC25UHRfGi2AjqV87A=",
             "type": "git",
             "url": "https://aur.archlinux.org/icalingua++.git"
         },
-        "version": "33518c5d410283589c2d0addba5fe962e7428dfe"
+        "version": "a0c47807b82216d1a3d41218b7c4935d78b35db2"
     },
     "pisces": {
         "cargoLocks": null,
