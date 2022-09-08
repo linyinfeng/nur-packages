@@ -2,15 +2,15 @@
 
 buildGoModule rec {
   pname = "cf-terraforming";
-  version = "0.9.0";
+  version = "0.8.5";
   src = fetchFromGitHub {
     owner = "cloudflare";
     repo = "cf-terraforming";
     rev = "v${version}";
-    sha256 = "sha256-ohz9fp3UvJxfuQ+66PwGjogOeNnu5fi078h5ns0LW0U=";
+    sha256 = "sha256-usfVPmovZ1fArJyqL2z68/bLpQtIS0uzGCz81li9CsA=";
   };
 
-  vendorSha256 = "sha256-tlQdgPfrQG6GkBQ8cLfAOygb5jYGIHl+3XRLJks9ky8=";
+  vendorSha256 = "sha256-a/gUxW4/Kv1BuhXpwibb6u7gO8lBo250ark1kwMLToo=";
 
   ldflags = [
     "-s"
