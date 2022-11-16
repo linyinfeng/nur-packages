@@ -1,4 +1,4 @@
-{ buildGoModule, fetchFromGitHub, lib }:
+{ buildGoModule, fetchFromGitHub, lib, nix-update-script }:
 
 buildGoModule rec {
   pname = "cf-terraforming";
@@ -19,6 +19,8 @@ buildGoModule rec {
   ];
 
   doCheck = false;
+
+  passthru.updateScript = nix-update-script { attrPath = pname; };
 
   meta = with lib; {
     description = "A command line utility to facilitate terraforming your existing Cloudflare resources";
