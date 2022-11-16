@@ -30,5 +30,6 @@ buildGoModule rec {
     homepage = "https://github.com/cloudflare/cf-terraforming";
     license = licenses.mpl20;
     broken = !(versionAtLeast (versions.majorMinor trivial.version) "22.11");
+    maintainers = with maintainers; [ yinfeng ];
   };
 }

@@ -56,8 +56,8 @@ buildGoModule rec {
     homepage = "https://www.minio.io/";
     description = "An S3-compatible object storage server";
     changelog = "https://github.com/minio/minio/releases/tag/RELEASE.${version}";
-    maintainers = with maintainers; [ yinfeng ];
     platforms = platforms.unix;
     license = licenses.agpl3Plus;
+    maintainers = with maintainers; [ yinfeng ];
   };
 }

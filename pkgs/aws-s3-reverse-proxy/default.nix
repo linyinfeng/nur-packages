@@ -21,5 +21,6 @@ buildGoModule rec {
     description = "Reverse-proxy all incoming S3 API calls to the public AWS S3 backend";
     homepage = "https://github.com/Kriechi/aws-s3-reverse-proxy";
     license = licenses.mit;
+    maintainers = with maintainers; [ yinfeng ];
   };
 }
