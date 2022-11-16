@@ -58,6 +58,7 @@ buildGoModule rec {
     changelog = "https://github.com/minio/minio/releases/tag/RELEASE.${version}";
     platforms = platforms.unix;
     license = licenses.agpl3Plus;
+    broken = !(versionAtLeast (versions.majorMinor trivial.version) "22.11");
     maintainers = with maintainers; [ yinfeng ];
   };
 }
