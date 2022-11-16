@@ -44,10 +44,13 @@ buildGoModule rec {
     "-X ${t}.CommitID=${src.rev}"
   ];
 
-  passthru.updateScript = nix-update-script { attrPath = pname; } ++ [
-    "--version-regex"
-    "RELEASE\\.(.*)"
-  ];
+  passthru = {
+    updateScriptEnabled = true;
+    updateScript = nix-update-script { attrPath = pname; } ++ [
+      "--version-regex"
+      "RELEASE\\.(.*)"
+    ];
+  };
 
   meta = with lib; {
     homepage = "https://www.minio.io/";

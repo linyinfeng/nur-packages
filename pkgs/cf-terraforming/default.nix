@@ -20,7 +20,10 @@ buildGoModule rec {
 
   doCheck = false;
 
-  passthru.updateScript = nix-update-script { attrPath = pname; };
+  passthru = {
+    updateScriptEnabled = true;
+    updateScript = nix-update-script { attrPath = pname; };
+  };
 
   meta = with lib; {
     description = "A command line utility to facilitate terraforming your existing Cloudflare resources";

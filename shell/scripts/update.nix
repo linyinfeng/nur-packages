@@ -13,8 +13,6 @@
 , updaterChangelogFile ? "${tmpDir}/updater-changelog"
 , updateScriptCommitMessageFile ? "${tmpDir}/commit-message"
 , alternativeEnvFile ? "${tmpDir}/github-env"
-, authorName ? "github-actions[bot]"
-, authorEmail ? "github-actions[bot]@users.noreply.github.com"
 }:
 
 let
@@ -38,8 +36,6 @@ writeShellScriptBin "update" ''
   fi
 
   # setup git
-  git config user.name "${authorName}"
-  git config user.email "${authorEmail}"
   function commit {
     git add --all
     git commit "$@"

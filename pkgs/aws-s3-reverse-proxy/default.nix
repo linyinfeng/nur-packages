@@ -12,7 +12,10 @@ buildGoModule rec {
 
   vendorSha256 = "sha256-UXlDbhG2EXFgk0fGFrxdDHopiuFJtY/YH1BF4/tVrCU=";
 
-  passthru.updateScript = nix-update-script { attrPath = pname; };
+  passthru = {
+    updateScriptEnabled = true;
+    updateScript = nix-update-script { attrPath = pname; };
+  };
 
   meta = with lib; {
     description = "Reverse-proxy all incoming S3 API calls to the public AWS S3 backend";
