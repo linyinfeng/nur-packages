@@ -27,6 +27,7 @@ let
     (trivial "nvfetcher-changes")
     (trivial "nvfetcher-changes-commit")
     (trivial "telegram-send")
+    (empty "synapse-s3-storage-provider")
     (trivial "trojan")
     (trivial "updater")
     (trivial "vlmcsd")

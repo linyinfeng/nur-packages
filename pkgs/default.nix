@@ -26,6 +26,7 @@ lib.makeScope newScope (
     minio-latest = callPackage ./minio-latest { };
     nvfetcher-changes = callPackage ./nvfetcher-changes { };
     nvfetcher-changes-commit = callPackage ./nvfetcher-changes-commit { };
+    synapse-s3-storage-provider = callPackage ./synapse-s3-storage-provider { };
     telegram-send = callPackage ./telegram-send { };
     trojan = callPackage ./trojan { };
     vlmcsd = callPackage ./vlmcsd { };

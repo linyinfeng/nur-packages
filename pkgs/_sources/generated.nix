@@ -159,6 +159,17 @@
       sha256 = "sha256-bM6+oAd/HXaVgpJMut8bwqO54Le33hwO9qet9paK1kY=";
     });
   };
+  synapse-s3-storage-provider = {
+    pname = "synapse-s3-storage-provider";
+    version = "v1.1.2";
+    src = fetchFromGitHub ({
+      owner = "matrix-org";
+      repo = "synapse-s3-storage-provider";
+      rev = "v1.1.2";
+      fetchSubmodules = false;
+      sha256 = "sha256-Jbv85gyk08m8fRiHZG9cwnFxaEOoVye5E5YquWyPvxQ=";
+    });
+  };
   telegram-send = {
     pname = "telegram-send";
     version = "34d7703754d441a6f4c4a7b5b3210759d36078e2";

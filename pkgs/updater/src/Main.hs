@@ -13,6 +13,7 @@ packageSet :: PackageSet ()
 packageSet = do
   traverse_ (uncurry clashPremium) clashPremiumSystems
   ghPkg "janten" "dpt-rp1-py"
+  ghPkg "matrix-org" "synapse-s3-storage-provider"
   ghPkg "trojan-gfw" "trojan"
   ghPkg "Wind4" "vlmcsd"
   gitPkg "aws-sigv4-proxy" "https://github.com/awslabs/aws-sigv4-proxy.git"

@@ -253,6 +253,25 @@
         },
         "version": "1.2.1"
     },
+    "synapse-s3-storage-provider": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "synapse-s3-storage-provider",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "matrix-org",
+            "repo": "synapse-s3-storage-provider",
+            "rev": "v1.1.2",
+            "sha256": "sha256-Jbv85gyk08m8fRiHZG9cwnFxaEOoVye5E5YquWyPvxQ=",
+            "type": "github"
+        },
+        "version": "v1.1.2"
+    },
     "telegram-send": {
         "cargoLocks": null,
         "extract": null,
