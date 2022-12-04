@@ -20,7 +20,7 @@ python3Packages.buildPythonPackage rec {
     twisted
   ];
 
-  doCheck =false;
+  doCheck = false;
 
   meta = with lib; {
     homepage = "https://github.com//matrix-org/synapse-s3-storage-provider";
