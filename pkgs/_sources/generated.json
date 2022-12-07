@@ -198,6 +198,20 @@
         },
         "version": "a55a690fe4bfccb8209642e58903ee28bcfb2e19"
     },
+    "linux-qq": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "linux-qq",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-7izsmUwfEAcQHj6PNcU/cprJRNHj342I62kW316vKo8=",
+            "type": "url",
+            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/4691a571/QQ-v2.0.1-429_x64.AppImage"
+        },
+        "version": "2.0.1-429"
+    },
     "plugin-bang-bang": {
         "cargoLocks": null,
         "extract": null,

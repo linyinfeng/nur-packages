@@ -74,7 +74,9 @@
     };
     cargoLock."Cargo.lock" = {
       lockFile = ./commit-notifier-573c1eb7eabc97aa06e0e9ad85f5148110749876/Cargo.lock;
-      outputHashes = { };
+      outputHashes = {
+        
+      };
     };
   };
   dot-tar = {
@@ -90,7 +92,9 @@
     };
     cargoLock."Cargo.lock" = {
       lockFile = ./dot-tar-56769243e896b6894b99c5e5b849b71698a27d1f/Cargo.lock;
-      outputHashes = { };
+      outputHashes = {
+        
+      };
     };
   };
   dpt-rp1-py = {
@@ -122,6 +126,14 @@
       deepClone = false;
       leaveDotGit = false;
       sha256 = "sha256-4K+lv0TOYn0qo0biq6pVKfL3MyBf2FjysLnD8GzJwac=";
+    };
+  };
+  linux-qq = {
+    pname = "linux-qq";
+    version = "2.0.1-429";
+    src = fetchurl {
+      url = "https://dldir1.qq.com/qqfile/qq/QQNT/4691a571/QQ-v2.0.1-429_x64.AppImage";
+      sha256 = "sha256-7izsmUwfEAcQHj6PNcU/cprJRNHj342I62kW316vKo8=";
     };
   };
   plugin-bang-bang = {
@@ -232,7 +244,9 @@
     });
     cargoLock."Cargo.lock" = {
       lockFile = ./zeronsd-v0.5.2/Cargo.lock;
-      outputHashes = { };
+      outputHashes = {
+        
+      };
     };
   };
 }
