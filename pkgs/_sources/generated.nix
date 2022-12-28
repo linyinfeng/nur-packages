@@ -74,7 +74,9 @@
     };
     cargoLock."Cargo.lock" = {
       lockFile = ./commit-notifier-573c1eb7eabc97aa06e0e9ad85f5148110749876/Cargo.lock;
-      outputHashes = { };
+      outputHashes = {
+        
+      };
     };
   };
   dot-tar = {
@@ -90,7 +92,9 @@
     };
     cargoLock."Cargo.lock" = {
       lockFile = ./dot-tar-56769243e896b6894b99c5e5b849b71698a27d1f/Cargo.lock;
-      outputHashes = { };
+      outputHashes = {
+        
+      };
     };
   };
   dpt-rp1-py = {
@@ -110,18 +114,6 @@
     src = fetchurl {
       url = "https://github.com/icalingua-plus-plus/icalingua-plus-plus/releases/download/v2.8.3/app-x86_64.asar";
       sha256 = "sha256-CjWNZOwbnyqkOZhSPS0MNy8hIbH1Ond9fUNbtGyyl30=";
-    };
-  };
-  icalingua-plus-plus-aur = {
-    pname = "icalingua-plus-plus-aur";
-    version = "6695731fb49d88bce1e54fb1fd68f0bddd93b7ae";
-    src = fetchgit {
-      url = "https://aur.archlinux.org/icalingua++.git";
-      rev = "6695731fb49d88bce1e54fb1fd68f0bddd93b7ae";
-      fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sha256 = "sha256-ul07fYm6eehhhWbOSHo1Ku7djUmch2UQ/dW5PfuzHiE=";
     };
   };
   linux-qq = {
@@ -240,7 +232,9 @@
     });
     cargoLock."Cargo.lock" = {
       lockFile = ./zeronsd-v0.5.2/Cargo.lock;
-      outputHashes = { };
+      outputHashes = {
+        
+      };
     };
   };
 }
