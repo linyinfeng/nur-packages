@@ -114,10 +114,10 @@
   };
   linux-qq = {
     pname = "linux-qq";
-    version = "2.0.1-429";
+    version = "3.0.0-565";
     src = fetchurl {
-      url = "https://dldir1.qq.com/qqfile/qq/QQNT/4691a571/QQ-v2.0.1-429_x64.AppImage";
-      sha256 = "sha256-7izsmUwfEAcQHj6PNcU/cprJRNHj342I62kW316vKo8=";
+      url = "https://dldir1.qq.com/qqfile/qq/QQNT/64bd2578/linuxqq_3.0.0-565_x86_64.AppImage";
+      sha256 = "sha256-uoxGwuG+RP1XiNEvQZ5yLHh2rYU1TxBsl9NYaYZ78AI=";
     };
   };
   plugin-bang-bang = {
