@@ -39,9 +39,9 @@ jobs:
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
-    - name: Setup nvchecker keyfile
+    - name: Setup nvchecker key file
       run: |
-        cat > pkgs/keyfile.toml <<EOF
+        cat > keyfile.toml <<EOF
         [keys]
         github = "${{ secrets.GITHUB_TOKEN }}"
         httptoken_clash-premium-aarch64-linux = "Bearer ${{ secrets.GITHUB_TOKEN }}"
