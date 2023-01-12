@@ -44,6 +44,10 @@ jobs:
         cat > pkgs/keyfile.toml <<EOF
         [keys]
         github = "${{ secrets.GITHUB_TOKEN }}"
+        httptoken_clash-premium-aarch64-linux = "Bearer ${{ secrets.GITHUB_TOKEN }}"
+        httptoken_clash-premium-i686-linux = "Bearer ${{ secrets.GITHUB_TOKEN }}"
+        httptoken_clash-premium-x86_64-darwin = "Bearer ${{ secrets.GITHUB_TOKEN }}"
+        httptoken_clash-premium-x86_64-linux = "Bearer ${{ secrets.GITHUB_TOKEN }}"
         EOF
     - name: Run updater
       run: |
