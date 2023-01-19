@@ -21,7 +21,8 @@ python3Packages.buildPythonApplication rec {
     # TODO https://github.com/pyca/pyopenssl/issues/873
     # TODO https://github.com/NixOS/nixpkgs/pull/201299
     broken = python3Packages.pyopenssl.meta.broken ||
-             python3Packages.pymemcache.meta.broken;
+             python3Packages.pymemcache.meta.broken ||
+             !(versionAtLeast (versions.majorMinor trivial.version) "23.05");
     maintainers = with maintainers; [ yinfeng ];
   };
 }
