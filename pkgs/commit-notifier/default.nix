@@ -1,4 +1,4 @@
-{ sources, rustPlatform, lib, pkg-config, openssl, libgit2, sqlite }:
+{ sources, rustPlatform, lib, pkg-config, openssl, libgit2, sqlite, zlib }:
 
 rustPlatform.buildRustPackage
 rec {
@@ -12,6 +12,7 @@ rec {
     openssl
     sqlite
     libgit2
+    zlib
   ];
 
   meta = with lib; {
