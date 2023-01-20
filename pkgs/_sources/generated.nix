@@ -178,17 +178,17 @@
   };
   tg-send = {
     pname = "tg-send";
-    version = "234ace2a8b6796609ef0360196ed481a39fcf3d7";
+    version = "2e1372c895bc113d4e69325d583355c1a855060f";
     src = fetchgit {
       url = "https://github.com/linyinfeng/tg-send.git";
-      rev = "234ace2a8b6796609ef0360196ed481a39fcf3d7";
+      rev = "2e1372c895bc113d4e69325d583355c1a855060f";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-5Kz1m09B19INWna57Tcg9wpDLBXUQscdiq4IVa1QZ+Q=";
+      sha256 = "sha256-qokMKkb/p0vJmvCn1TABlVYOPqP6n3VJ9UB5+CfYw9U=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./tg-send-234ace2a8b6796609ef0360196ed481a39fcf3d7/Cargo.lock;
+      lockFile = ./tg-send-2e1372c895bc113d4e69325d583355c1a855060f/Cargo.lock;
       outputHashes = { };
     };
     date = "2023-01-20";
