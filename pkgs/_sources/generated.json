@@ -27,11 +27,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-uwoU6e+zbJe/6b056/JlHf+TBurOtrool6qG3c2w7nY=",
+            "sha256": "sha256-jG3pXSmC13Fd0Gnktmu+hQ7kAPp1LRPqL9HWpVbDjzA=",
             "type": "url",
-            "url": "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.13/Clash.for.Windows-0.20.13-x64-linux.tar.gz"
+            "url": "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.14/Clash.for.Windows-0.20.14-x64-linux.tar.gz"
         },
-        "version": "0.20.13"
+        "version": "0.20.14"
     },
     "clash-for-windows-icon": {
         "cargoLocks": null,
@@ -287,6 +287,30 @@
             "url": "https://github.com/rahiel/telegram-send.git"
         },
         "version": "34d7703754d441a6f4c4a7b5b3210759d36078e2"
+    },
+    "tg-send": {
+        "cargoLocks": {
+            "Cargo.lock": [
+                "./tg-send-234ace2a8b6796609ef0360196ed481a39fcf3d7/Cargo.lock",
+                {}
+            ]
+        },
+        "date": "2023-01-20",
+        "extract": null,
+        "name": "tg-send",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "234ace2a8b6796609ef0360196ed481a39fcf3d7",
+            "sha256": "sha256-5Kz1m09B19INWna57Tcg9wpDLBXUQscdiq4IVa1QZ+Q=",
+            "type": "git",
+            "url": "https://github.com/linyinfeng/tg-send.git"
+        },
+        "version": "234ace2a8b6796609ef0360196ed481a39fcf3d7"
     },
     "trojan": {
         "cargoLocks": null,

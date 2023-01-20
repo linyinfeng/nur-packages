@@ -16,10 +16,10 @@
   };
   clash-for-windows = {
     pname = "clash-for-windows";
-    version = "0.20.13";
+    version = "0.20.14";
     src = fetchurl {
-      url = "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.13/Clash.for.Windows-0.20.13-x64-linux.tar.gz";
-      sha256 = "sha256-uwoU6e+zbJe/6b056/JlHf+TBurOtrool6qG3c2w7nY=";
+      url = "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.14/Clash.for.Windows-0.20.14-x64-linux.tar.gz";
+      sha256 = "sha256-jG3pXSmC13Fd0Gnktmu+hQ7kAPp1LRPqL9HWpVbDjzA=";
     };
   };
   clash-for-windows-icon = {
@@ -175,6 +175,23 @@
       sha256 = "sha256-/+hNnUT7kA19wpiHGNPVMQGostjoaDzHd91WYruJq0w=";
     };
     date = "2022-05-13";
+  };
+  tg-send = {
+    pname = "tg-send";
+    version = "234ace2a8b6796609ef0360196ed481a39fcf3d7";
+    src = fetchgit {
+      url = "https://github.com/linyinfeng/tg-send.git";
+      rev = "234ace2a8b6796609ef0360196ed481a39fcf3d7";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sha256 = "sha256-5Kz1m09B19INWna57Tcg9wpDLBXUQscdiq4IVa1QZ+Q=";
+    };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./tg-send-234ace2a8b6796609ef0360196ed481a39fcf3d7/Cargo.lock;
+      outputHashes = { };
+    };
+    date = "2023-01-20";
   };
   trojan = {
     pname = "trojan";
