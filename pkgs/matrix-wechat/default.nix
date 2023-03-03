@@ -19,6 +19,7 @@ buildGoModule rec {
   ldflags = [
     "-s"
     "-w"
+    "-X main.Tag=${version}"
   ];
 
   passthru = {

@@ -1,11 +1,15 @@
-{ buildGoModule
+{ buildGo120Module
+, go
 , fetchFromGitHub
 , lib
 , nix-update-script
 , olm
 }:
 
-buildGoModule rec {
+# TODO use buildGoModule instread after 1.20
+assert !(lib.versionAtLeast go.version "1.20");
+
+buildGo120Module rec {
   pname = "matrix-qq";
   version = "0.1.4";
   src = fetchFromGitHub {
@@ -24,6 +28,7 @@ buildGoModule rec {
   ldflags = [
     "-s"
     "-w"
+    "-X main.Tag=${version}"
   ];
 
   passthru = {
