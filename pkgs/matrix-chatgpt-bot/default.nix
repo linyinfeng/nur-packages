@@ -1,7 +1,10 @@
-{ sources, lib, mkYarnPackage, nodejs, makeWrapper, matrix-sdk-crypto-nodejs }:
+{ callPackage, sources, lib, mkYarnPackage, nodejs, makeWrapper, matrix-sdk-crypto-nodejs }:
 
 mkYarnPackage {
   inherit (sources.matrix-chatgpt-bot) pname version src;
+
+  packageJSON = ./package.json;
+  yarnNix = ./yarn.nix;
 
   nativeBuildInputs = [
     makeWrapper
@@ -23,6 +26,11 @@ mkYarnPackage {
       --add-flags "$out_node_path/matrix-chatgpt-bot/dist/index.js" \
       --prefix NODE_PATH : "$out_node_path"
   '';
+
+  passthru = {
+    updateScriptEnabled = true;
+    updateScript = let script = callPackage ./update.nix { }; in [ "${script}" ];
+  };
 
   meta = with lib; {
     description = "Talk to ChatGPT via any Matrix client";
