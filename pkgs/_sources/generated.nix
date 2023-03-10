@@ -16,10 +16,10 @@
   };
   clash-for-windows = {
     pname = "clash-for-windows";
-    version = "0.20.17";
+    version = "0.20.18";
     src = fetchurl {
-      url = "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.17/Clash.for.Windows-0.20.17-x64-linux.tar.gz";
-      sha256 = "sha256-Ya7umEaEGL6ZyJNDGYFXvjMTB3yYKXNFFce/EJKx4ek=";
+      url = "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.18/Clash.for.Windows-0.20.18-x64-linux.tar.gz";
+      sha256 = "sha256-Z7nL+/sIEi1PVQUPJ9xBgYM04PovGPMym9D8q1o0BZ0=";
     };
   };
   clash-premium-aarch64-linux = {
@@ -67,7 +67,9 @@
     };
     cargoLock."Cargo.lock" = {
       lockFile = ./commit-notifier-fdd7b1beb928ae2a778dd024a8cbd7b5fd6883f5/Cargo.lock;
-      outputHashes = { };
+      outputHashes = {
+        
+      };
     };
     date = "2023-03-01";
   };
@@ -84,7 +86,9 @@
     };
     cargoLock."Cargo.lock" = {
       lockFile = ./dot-tar-d8da4cbb76bd697c1daaef0bae52c74eb0c9831d/Cargo.lock;
-      outputHashes = { };
+      outputHashes = {
+        
+      };
     };
     date = "2023-03-01";
   };
@@ -130,7 +134,9 @@
     });
     cargoLock."Cargo.lock" = {
       lockFile = ./mstickereditor-v0.3.1/Cargo.lock;
-      outputHashes = { };
+      outputHashes = {
+        
+      };
     };
   };
   plugin-bang-bang = {
@@ -311,7 +317,9 @@
     };
     cargoLock."Cargo.lock" = {
       lockFile = ./tg-send-2e1372c895bc113d4e69325d583355c1a855060f/Cargo.lock;
-      outputHashes = { };
+      outputHashes = {
+        
+      };
     };
     date = "2023-01-20";
   };
@@ -365,7 +373,9 @@
     });
     cargoLock."Cargo.lock" = {
       lockFile = ./zeronsd-v0.5.2/Cargo.lock;
-      outputHashes = { };
+      outputHashes = {
+        
+      };
     };
   };
 }
