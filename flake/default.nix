@@ -6,7 +6,7 @@
     ./devshells.nix
     ./flake-modules.nix
     ./lib.nix
-    ./nixpkgs.nix
+    ./nixos-modules.nix
     ./overlays.nix
     ./packages.nix
     ./treefmt.nix
