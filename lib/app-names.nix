@@ -43,7 +43,6 @@ let
     (empty "synapse-s3-storage-provider")
     (trivial "tg-send")
     (trivial "trojan")
-    (trivial "updater")
     (trivial "vlmcsd")
     {
       "wemeet" = {
