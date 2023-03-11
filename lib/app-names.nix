@@ -5,10 +5,10 @@ let
   trivial = p:
     let pname = extractPname p; in
     {
-    "${p}" = {
-      "${p}" = pname;
+      "${p}" = {
+        "${p}" = pname;
+      };
     };
-  };
   empty = p: { "${p}" = { }; };
   merge = lib.fold lib.recursiveUpdate { };
   appNamesDict = merge [
