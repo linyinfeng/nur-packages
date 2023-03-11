@@ -1,9 +1,12 @@
 { lib }:
 
 let
-  trivial = p: {
+  extractPname = n: lib.lists.last (lib.strings.split "/" n);
+  trivial = p:
+    let pname = extractPname p; in
+    {
     "${p}" = {
-      "${p}" = p;
+      "${p}" = pname;
     };
   };
   empty = p: { "${p}" = { }; };
@@ -18,6 +21,8 @@ let
     { "clash-meta" = { "clash-meta" = "clash"; }; }
     (trivial "clash-premium")
     (trivial "commit-notifier")
+    (trivial "devPackages/nvfetcher-self")
+    (trivial "devPackages/update")
     (trivial "dot-tar")
     { "dpt-rp1-py" = { "dpt-rp1-py" = "dptrp1"; }; }
     (empty "fishPlugins/bang-bang")
