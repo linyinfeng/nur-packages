@@ -1,7 +1,7 @@
 {
     "aws-sigv4-proxy": {
         "cargoLocks": null,
-        "date": "2023-03-02",
+        "date": "2023-03-28",
         "extract": null,
         "name": "aws-sigv4-proxy",
         "passthru": null,
@@ -11,12 +11,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "645ae6a38d7f244d041f7b35374cc3a1ecdf59d1",
-            "sha256": "sha256-OdKmweKULSZLgYMx26iw1mEvBDSCVRpA0+g8jFTiECY=",
+            "rev": "4a207d1457de5e74f3cac85844b8d6c5b91b96c3",
+            "sha256": "sha256-XqewihuEETvlCUrpRrDHf/JFbkCCWfk3a1AZBw7slpo=",
             "type": "git",
             "url": "https://github.com/awslabs/aws-sigv4-proxy.git"
         },
-        "version": "645ae6a38d7f244d041f7b35374cc3a1ecdf59d1"
+        "version": "4a207d1457de5e74f3cac85844b8d6c5b91b96c3"
     },
     "clash-for-windows": {
         "cargoLocks": null,
@@ -357,7 +357,7 @@
     },
     "rime-ice": {
         "cargoLocks": null,
-        "date": "2023-03-26",
+        "date": "2023-03-29",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -367,12 +367,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "238fd09847a983c4e88d282390cbdde0f6c980f6",
-            "sha256": "sha256-mAnVpgzTa+ulWouJc0IZ8Ed5e5lZIkznTcra0uxv+lI=",
+            "rev": "24ba0b0b3ac57f531978633f070669305d7d2561",
+            "sha256": "sha256-R4HYI9N8nMlZECPUQczge3uRx9cM0lwUYIZmrG2ZkFw=",
             "type": "git",
             "url": "https://github.com/iDvel/rime-ice.git"
         },
-        "version": "238fd09847a983c4e88d282390cbdde0f6c980f6"
+        "version": "24ba0b0b3ac57f531978633f070669305d7d2561"
     },
     "rime-luna-pinyin": {
         "cargoLocks": null,
