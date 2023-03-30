@@ -21,6 +21,7 @@ let
     { "clash-meta" = { "clash-meta" = "clash"; }; }
     (trivial "clash-premium")
     (trivial "commit-notifier")
+    (trivial "cowrie")
     (trivial "devPackages/nvfetcher-self")
     (trivial "devPackages/update")
     (trivial "dot-tar")

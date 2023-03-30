@@ -117,6 +117,26 @@
         },
         "version": "73cf28cd7d848570b76d7be5554f9dec14caa5be"
     },
+    "cowrie": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "cowrie",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "cowrie",
+            "repo": "cowrie",
+            "rev": "v2.5.0",
+            "sha256": "sha256-5nCEH32U81SE2ky0XN6arIGNxKadqYggIz/uVnmXpN8=",
+            "type": "github"
+        },
+        "version": "v2.5.0"
+    },
     "dot-tar": {
         "cargoLocks": {
             "Cargo.lock": [

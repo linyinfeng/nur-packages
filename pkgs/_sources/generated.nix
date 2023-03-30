@@ -71,6 +71,17 @@
     };
     date = "2023-03-25";
   };
+  cowrie = {
+    pname = "cowrie";
+    version = "v2.5.0";
+    src = fetchFromGitHub ({
+      owner = "cowrie";
+      repo = "cowrie";
+      rev = "v2.5.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-5nCEH32U81SE2ky0XN6arIGNxKadqYggIz/uVnmXpN8=";
+    });
+  };
   dot-tar = {
     pname = "dot-tar";
     version = "a4aeef015718a2b8e4a451e0e7ac367483995c3c";
