@@ -3,16 +3,16 @@
 {
   aws-sigv4-proxy = {
     pname = "aws-sigv4-proxy";
-    version = "4a207d1457de5e74f3cac85844b8d6c5b91b96c3";
+    version = "26b15d857b7e09f6a921c8ca0410e4a2d97c76bd";
     src = fetchgit {
       url = "https://github.com/awslabs/aws-sigv4-proxy.git";
-      rev = "4a207d1457de5e74f3cac85844b8d6c5b91b96c3";
+      rev = "26b15d857b7e09f6a921c8ca0410e4a2d97c76bd";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-XqewihuEETvlCUrpRrDHf/JFbkCCWfk3a1AZBw7slpo=";
+      sha256 = "sha256-xMn9H1XqiVORQpjd2cO1K5KhlMwumIGME6UwqvxmM2U=";
     };
-    date = "2023-03-28";
+    date = "2023-03-30";
   };
   clash-for-windows = {
     pname = "clash-for-windows";
@@ -235,16 +235,16 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "24ba0b0b3ac57f531978633f070669305d7d2561";
+    version = "6ac9208474860d7be67db9acde8630f9049767c7";
     src = fetchgit {
       url = "https://github.com/iDvel/rime-ice.git";
-      rev = "24ba0b0b3ac57f531978633f070669305d7d2561";
+      rev = "6ac9208474860d7be67db9acde8630f9049767c7";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-R4HYI9N8nMlZECPUQczge3uRx9cM0lwUYIZmrG2ZkFw=";
+      sha256 = "sha256-fPie/sDrQY5ZbjLJZ/nNRuXGxzA+U4XCsA0zXHrJ320=";
     };
-    date = "2023-03-29";
+    date = "2023-03-30";
   };
   rime-luna-pinyin = {
     pname = "rime-luna-pinyin";
@@ -300,13 +300,13 @@
   };
   synapse-s3-storage-provider = {
     pname = "synapse-s3-storage-provider";
-    version = "v1.2.0+ci-fix";
+    version = "v1.2.1";
     src = fetchFromGitHub ({
       owner = "matrix-org";
       repo = "synapse-s3-storage-provider";
-      rev = "v1.2.0+ci-fix";
+      rev = "v1.2.1";
       fetchSubmodules = false;
-      sha256 = "sha256-1IKigzsbwToKZJ7/Ek9dTptZ4bDEWpLL1fVzWGC+6RU=";
+      sha256 = "sha256-92Xkq54jrUE2I9uVOxI72V9imLNU6K4JqDdOZb+4f+Y=";
     });
   };
   telegram-send = {
