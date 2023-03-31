@@ -1,7 +1,7 @@
 {
     "aws-sigv4-proxy": {
         "cargoLocks": null,
-        "date": "2023-03-28",
+        "date": "2023-03-30",
         "extract": null,
         "name": "aws-sigv4-proxy",
         "passthru": null,
@@ -11,12 +11,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "4a207d1457de5e74f3cac85844b8d6c5b91b96c3",
-            "sha256": "sha256-XqewihuEETvlCUrpRrDHf/JFbkCCWfk3a1AZBw7slpo=",
+            "rev": "26b15d857b7e09f6a921c8ca0410e4a2d97c76bd",
+            "sha256": "sha256-xMn9H1XqiVORQpjd2cO1K5KhlMwumIGME6UwqvxmM2U=",
             "type": "git",
             "url": "https://github.com/awslabs/aws-sigv4-proxy.git"
         },
-        "version": "4a207d1457de5e74f3cac85844b8d6c5b91b96c3"
+        "version": "26b15d857b7e09f6a921c8ca0410e4a2d97c76bd"
     },
     "clash-for-windows": {
         "cargoLocks": null,
@@ -377,7 +377,7 @@
     },
     "rime-ice": {
         "cargoLocks": null,
-        "date": "2023-03-29",
+        "date": "2023-03-30",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -387,12 +387,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "24ba0b0b3ac57f531978633f070669305d7d2561",
-            "sha256": "sha256-R4HYI9N8nMlZECPUQczge3uRx9cM0lwUYIZmrG2ZkFw=",
+            "rev": "6ac9208474860d7be67db9acde8630f9049767c7",
+            "sha256": "sha256-fPie/sDrQY5ZbjLJZ/nNRuXGxzA+U4XCsA0zXHrJ320=",
             "type": "git",
             "url": "https://github.com/iDvel/rime-ice.git"
         },
-        "version": "24ba0b0b3ac57f531978633f070669305d7d2561"
+        "version": "6ac9208474860d7be67db9acde8630f9049767c7"
     },
     "rime-luna-pinyin": {
         "cargoLocks": null,
@@ -484,11 +484,11 @@
             "name": null,
             "owner": "matrix-org",
             "repo": "synapse-s3-storage-provider",
-            "rev": "v1.2.0+ci-fix",
-            "sha256": "sha256-1IKigzsbwToKZJ7/Ek9dTptZ4bDEWpLL1fVzWGC+6RU=",
+            "rev": "v1.2.1",
+            "sha256": "sha256-92Xkq54jrUE2I9uVOxI72V9imLNU6K4JqDdOZb+4f+Y=",
             "type": "github"
         },
-        "version": "v1.2.0+ci-fix"
+        "version": "v1.2.1"
     },
     "telegram-send": {
         "cargoLocks": null,
