@@ -18,7 +18,6 @@ lib.makeScope newScope (
     canokey-udev-rules = callPackage ./canokey-udev-rules { };
     cf-terraforming = callPackage ./cf-terraforming { };
     clash-for-windows = callPackage ./clash-for-windows { };
-    clash-meta = callPackage ./clash-meta { };
     clash-premium = callPackage ./clash-premium { };
     commit-notifier = callPackage ./commit-notifier { };
     dot-tar = callPackage ./dot-tar { };

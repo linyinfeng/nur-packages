@@ -18,7 +18,6 @@ let
     (empty "canokey-udev-rules")
     (trivial "cf-terraforming")
     { "clash-for-windows" = { "clash-for-windows" = "cfw"; }; }
-    { "clash-meta" = { "clash-meta" = "clash"; }; }
     (trivial "clash-premium")
     (trivial "commit-notifier")
     (trivial "cowrie")
