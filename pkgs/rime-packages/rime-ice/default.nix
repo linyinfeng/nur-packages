@@ -1,7 +1,16 @@
-{ sources, stdenv, lib, rime-prelude }:
+{ sources, stdenv, lib, librime, rimeDataBuildHook, rime-prelude }:
 
 stdenv.mkDerivation {
   inherit (sources.rime-ice) pname version src;
+
+  nativeBuildInputs = [
+    librime
+    rimeDataBuildHook
+  ];
+
+  buildInputs = [
+    # rime-prelude
+  ];
 
   installPhase = ''
     install -Dm644 cn_dicts/* -t "$out/share/rime-data/cn_dicts"
@@ -11,6 +20,9 @@ stdenv.mkDerivation {
     install -Dm644 *.{schema,dict}.yaml  -t "$out/share/rime-data/"
     install -Dm644 *.{lua,gram}          -t "$out/share/rime-data/"
     install -Dm644 symbols_custom.yaml   -t "$out/share/rime-data/"
+    install -Dm644 symbols_custom_double.yaml   -t "$out/share/rime-data/"
+
+    install -Dm644 build/*  -t "$out/share/rime-data/build"
   '';
 
   passthru.rimeDependencies = [ rime-prelude ];
