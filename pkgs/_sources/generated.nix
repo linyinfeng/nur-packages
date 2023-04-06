@@ -235,16 +235,16 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "6ac9208474860d7be67db9acde8630f9049767c7";
+    version = "fcbcf1bcc168e0599925f48baba48161912097e1";
     src = fetchgit {
       url = "https://github.com/iDvel/rime-ice.git";
-      rev = "6ac9208474860d7be67db9acde8630f9049767c7";
+      rev = "fcbcf1bcc168e0599925f48baba48161912097e1";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-fPie/sDrQY5ZbjLJZ/nNRuXGxzA+U4XCsA0zXHrJ320=";
+      sha256 = "sha256-kmJ0vxM2tdYBYHyligb94G4L8IT0zK3KnmeC7zirXzM=";
     };
-    date = "2023-03-30";
+    date = "2023-04-06";
   };
   rime-luna-pinyin = {
     pname = "rime-luna-pinyin";
@@ -363,10 +363,10 @@
   };
   wemeet = {
     pname = "wemeet";
-    version = "3.14.0.401";
+    version = "3.14.0.402";
     src = fetchurl {
-      url = "https://updatecdn.meeting.qq.com/cos/1b001ef75914a1d6948decb8c2550b47/TencentMeeting_0300000000_3.14.0.401_x86_64_default.publish.deb";
-      sha256 = "sha256-ioBlxrdTboLSRXO9BhmdPFl5M0chaEoPgVLsami1Gy8=";
+      url = "https://updatecdn.meeting.qq.com/cos/5a910969828531efb24add85626e2372/TencentMeeting_0300000000_3.14.0.402_x86_64_default.publish.deb";
+      sha256 = "sha256-lpCXijWI3FQJXB6ofF+eKAweIyanvKxdwQrrLP37HDA=";
     };
   };
   yacd = {
