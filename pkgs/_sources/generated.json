@@ -27,11 +27,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-PINN3ufk2feB+od01LKoguHLM0hGFoDgNSxtqvGedXQ=",
+            "sha256": "sha256-WfG4HuN+gLE60HdSXb0xXi//qUzX7DqnrP9H6QKE3TQ=",
             "type": "url",
-            "url": "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.19/Clash.for.Windows-0.20.19-x64-linux.tar.gz"
+            "url": "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.20/Clash.for.Windows-0.20.20-x64-linux.tar.gz"
         },
-        "version": "0.20.19"
+        "version": "0.20.20"
     },
     "clash-premium-aarch64-linux": {
         "cargoLocks": null,
@@ -444,12 +444,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "67388c11ef83d10f65fd4abf6934d66def935627",
-            "sha256": "sha256-VVETotMh+cvHFOUG1hEuS//Xcz1X0y2x+0snSTnu98A=",
+            "rev": "d859ee255e46e74f8fef2592967b8c411d639508",
+            "sha256": "sha256-dTcyP5Lb0JBTua9YVnbLmjNFJau+kxh+RctaX08mBBs=",
             "type": "git",
             "url": "https://github.com/iDvel/rime-ice.git"
         },
-        "version": "67388c11ef83d10f65fd4abf6934d66def935627"
+        "version": "d859ee255e46e74f8fef2592967b8c411d639508"
     },
     "rime-loengfan": {
         "cargoLocks": null,
