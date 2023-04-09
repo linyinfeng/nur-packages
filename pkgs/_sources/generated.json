@@ -1,4 +1,30 @@
 {
+    "anyrun": {
+        "cargoLocks": {
+            "Cargo.lock": [
+                "./anyrun-7a7fb55e74967a3541ced8716174ebdecc7203b5/Cargo.lock",
+                {
+                    "kidex-common-0.1.0": "sha256-sPzCTK0gdIYkKWxrtoPJ/F2zrG2ZKHOSmANW2g00fSQ="
+                }
+            ]
+        },
+        "date": "2023-04-08",
+        "extract": null,
+        "name": "anyrun",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "7a7fb55e74967a3541ced8716174ebdecc7203b5",
+            "sha256": "sha256-cuuhooFZxs/4f2a0Kg0TauQlYdqKlPWN4jyd747nrAQ=",
+            "type": "git",
+            "url": "https://github.com/Kirottu/anyrun.git"
+        },
+        "version": "7a7fb55e74967a3541ced8716174ebdecc7203b5"
+    },
     "aws-sigv4-proxy": {
         "cargoLocks": null,
         "date": "2023-03-30",
@@ -434,7 +460,7 @@
     },
     "rime-ice": {
         "cargoLocks": null,
-        "date": "2023-04-08",
+        "date": "2023-04-09",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -444,12 +470,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "272c70694d99eab621f4e0b4d7a8c239ebdd7f5e",
-            "sha256": "sha256-iJIOdjwUuGz9MBxz+vq1uSewmM889Ak9FvjZ14GjUSU=",
+            "rev": "6f20e2b7e8bae54c7befc1f34c19f5bb2a78f4ef",
+            "sha256": "sha256-0mp0e3zQmnTiZRk9AwQ2oTKTtaLL9867fyyLnxkeRY0=",
             "type": "git",
             "url": "https://github.com/iDvel/rime-ice.git"
         },
-        "version": "272c70694d99eab621f4e0b4d7a8c239ebdd7f5e"
+        "version": "6f20e2b7e8bae54c7befc1f34c19f5bb2a78f4ef"
     },
     "rime-loengfan": {
         "cargoLocks": null,

@@ -13,6 +13,7 @@ let
   merge = lib.fold lib.recursiveUpdate { };
   appNamesDict = merge [
     (trivial "activate-dpt")
+    (trivial "anyrun")
     (trivial "aws-s3-reverse-proxy")
     (trivial "aws-sigv4-proxy")
     (empty "canokey-udev-rules")
