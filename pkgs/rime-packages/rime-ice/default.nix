@@ -9,7 +9,7 @@ stdenv.mkDerivation {
   ];
 
   buildInputs = [
-    # rime-prelude
+    rime-prelude
   ];
 
   installPhase = ''
@@ -17,10 +17,11 @@ stdenv.mkDerivation {
     install -Dm644 en_dicts/* -t "$out/share/rime-data/en_dicts"
     install -Dm644 opencc/*   -t "$out/share/rime-data/opencc"
 
-    install -Dm644 *.{schema,dict}.yaml  -t "$out/share/rime-data/"
-    install -Dm644 *.{lua,gram}          -t "$out/share/rime-data/"
-    install -Dm644 symbols_custom.yaml   -t "$out/share/rime-data/"
-    install -Dm644 symbols_custom_double.yaml   -t "$out/share/rime-data/"
+    install -Dm644 *.{schema,dict}.yaml -t "$out/share/rime-data/"
+    install -Dm644 *.{lua,gram}         -t "$out/share/rime-data/"
+    install -Dm644 custom_phrase.txt    -t "$out/share/rime-data/"
+    install -Dm644 symbols_v.yaml       -t "$out/share/rime-data/"
+    install -Dm644 symbols_caps_v.yaml  -t "$out/share/rime-data/"
 
     install -Dm644 build/*  -t "$out/share/rime-data/build"
   '';
