@@ -2,13 +2,13 @@
     "anyrun": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./anyrun-e472fe73b1a231701bd9c3fb7a69ae133f89ccb4/Cargo.lock",
+                "./anyrun-78acd78d66e833e5daa907dfd24ce57ce725f387/Cargo.lock",
                 {
                     "kidex-common-0.1.0": "sha256-sPzCTK0gdIYkKWxrtoPJ/F2zrG2ZKHOSmANW2g00fSQ="
                 }
             ]
         },
-        "date": "2023-04-11",
+        "date": "2023-04-13",
         "extract": null,
         "name": "anyrun",
         "passthru": null,
@@ -18,12 +18,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "e472fe73b1a231701bd9c3fb7a69ae133f89ccb4",
-            "sha256": "sha256-nrhoPjuCI9uAyET3lWG8fiftchIvA6RrCf7GSY+vhqk=",
+            "rev": "78acd78d66e833e5daa907dfd24ce57ce725f387",
+            "sha256": "sha256-pnjyvv1/zL3If5B4oX7D6nQqQKLnhryBao1PtYjf3S0=",
             "type": "git",
             "url": "https://github.com/Kirottu/anyrun.git"
         },
-        "version": "e472fe73b1a231701bd9c3fb7a69ae133f89ccb4"
+        "version": "78acd78d66e833e5daa907dfd24ce57ce725f387"
     },
     "aws-sigv4-proxy": {
         "cargoLocks": null,
@@ -68,11 +68,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-z3c6UkOykgAsYCMgYbDKeOvkwZBij2LErq3e2kNRIxA=",
+            "sha256": "sha256-zImvQdCpnKnzYO5I2UoL6Q5aPegdSp/GoUAIYPr3YsM=",
             "type": "url",
-            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-linux-arm64-2023.03.18.gz"
+            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-linux-arm64-2023.04.13.gz"
         },
-        "version": "2023.03.18"
+        "version": "2023.04.13"
     },
     "clash-premium-i686-linux": {
         "cargoLocks": null,
@@ -83,11 +83,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-xeDqNtCoVo59jnX2m50s0ksEmyN4Kz7ghe2GAaNlWSE=",
+            "sha256": "sha256-WNqb/3e/8KnfqI3Pij7wNWgZ9LgflB3+bwlWdWio7sQ=",
             "type": "url",
-            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-linux-386-2023.03.18.gz"
+            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-linux-386-2023.04.13.gz"
         },
-        "version": "2023.03.18"
+        "version": "2023.04.13"
     },
     "clash-premium-x86_64-darwin": {
         "cargoLocks": null,
@@ -98,11 +98,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-8XFSEEWh2D+9QjB9+mCBJnIKIoC9XcPkX0wi7cYtAnE=",
+            "sha256": "sha256-ag6CB8u6oDsGbXfpnGya/EvtdaG084+vYWyutMKvRAM=",
             "type": "url",
-            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-darwin-amd64-2023.03.18.gz"
+            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-darwin-amd64-2023.04.13.gz"
         },
-        "version": "2023.03.18"
+        "version": "2023.04.13"
     },
     "clash-premium-x86_64-linux": {
         "cargoLocks": null,
@@ -113,11 +113,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-ihKvpzrBTIwmmYzO1260XvwTRoXyCfi6ueOM4FFHu+Q=",
+            "sha256": "sha256-unGO/qT7LMgXDQCuaSgkKM9Dg80eIQoEKdOVApacUlI=",
             "type": "url",
-            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-linux-amd64-2023.03.18.gz"
+            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-linux-amd64-2023.04.13.gz"
         },
-        "version": "2023.03.18"
+        "version": "2023.04.13"
     },
     "commit-notifier": {
         "cargoLocks": {
@@ -384,7 +384,7 @@
     },
     "rime-cantonese": {
         "cargoLocks": null,
-        "date": "2023-04-06",
+        "date": "2023-04-13",
         "extract": null,
         "name": "rime-cantonese",
         "passthru": null,
@@ -394,12 +394,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "6ef56f5293e47e2770d4390b84fd5c7241b33c6c",
-            "sha256": "sha256-Hm9pfym4Z7b2UqBn7r21/uSw7DUnfjzCEOPbmRJNXjA=",
+            "rev": "7ffbef96c145f3d4030ff47f62ab6e1eb96da018",
+            "sha256": "sha256-xyRH/OmUo7AHw4bqFqqs1Qpd9K0HOzCRWjos8zD6pUA=",
             "type": "git",
             "url": "https://github.com/rime/rime-cantonese.git"
         },
-        "version": "6ef56f5293e47e2770d4390b84fd5c7241b33c6c"
+        "version": "7ffbef96c145f3d4030ff47f62ab6e1eb96da018"
     },
     "rime-double-pinyin": {
         "cargoLocks": null,
@@ -460,7 +460,7 @@
     },
     "rime-ice": {
         "cargoLocks": null,
-        "date": "2023-04-12",
+        "date": "2023-04-13",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -470,12 +470,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "bfeb35dccbf9f2f40aa629317faa57b25826adc9",
-            "sha256": "sha256-FfhU/2s8/5XGrPHLbY8E3DORYvpjXyu6YLyd3J8bFJc=",
+            "rev": "613b3dee7c8d3a0f55b4ee1327b9d4b69c090852",
+            "sha256": "sha256-siDbeYP378XI7rY0Er3mEzcKA7CAeHW0aHKFme9eR3A=",
             "type": "git",
             "url": "https://github.com/iDvel/rime-ice.git"
         },
-        "version": "bfeb35dccbf9f2f40aa629317faa57b25826adc9"
+        "version": "613b3dee7c8d3a0f55b4ee1327b9d4b69c090852"
     },
     "rime-loengfan": {
         "cargoLocks": null,

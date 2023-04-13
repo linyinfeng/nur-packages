@@ -3,22 +3,22 @@
 {
   anyrun = {
     pname = "anyrun";
-    version = "e472fe73b1a231701bd9c3fb7a69ae133f89ccb4";
+    version = "78acd78d66e833e5daa907dfd24ce57ce725f387";
     src = fetchgit {
       url = "https://github.com/Kirottu/anyrun.git";
-      rev = "e472fe73b1a231701bd9c3fb7a69ae133f89ccb4";
+      rev = "78acd78d66e833e5daa907dfd24ce57ce725f387";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-nrhoPjuCI9uAyET3lWG8fiftchIvA6RrCf7GSY+vhqk=";
+      sha256 = "sha256-pnjyvv1/zL3If5B4oX7D6nQqQKLnhryBao1PtYjf3S0=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./anyrun-e472fe73b1a231701bd9c3fb7a69ae133f89ccb4/Cargo.lock;
+      lockFile = ./anyrun-78acd78d66e833e5daa907dfd24ce57ce725f387/Cargo.lock;
       outputHashes = {
         "kidex-common-0.1.0" = "sha256-sPzCTK0gdIYkKWxrtoPJ/F2zrG2ZKHOSmANW2g00fSQ=";
       };
     };
-    date = "2023-04-11";
+    date = "2023-04-13";
   };
   aws-sigv4-proxy = {
     pname = "aws-sigv4-proxy";
@@ -43,34 +43,34 @@
   };
   clash-premium-aarch64-linux = {
     pname = "clash-premium-aarch64-linux";
-    version = "2023.03.18";
+    version = "2023.04.13";
     src = fetchurl {
-      url = "https://github.com/Dreamacro/clash/releases/download/premium/clash-linux-arm64-2023.03.18.gz";
-      sha256 = "sha256-z3c6UkOykgAsYCMgYbDKeOvkwZBij2LErq3e2kNRIxA=";
+      url = "https://github.com/Dreamacro/clash/releases/download/premium/clash-linux-arm64-2023.04.13.gz";
+      sha256 = "sha256-zImvQdCpnKnzYO5I2UoL6Q5aPegdSp/GoUAIYPr3YsM=";
     };
   };
   clash-premium-i686-linux = {
     pname = "clash-premium-i686-linux";
-    version = "2023.03.18";
+    version = "2023.04.13";
     src = fetchurl {
-      url = "https://github.com/Dreamacro/clash/releases/download/premium/clash-linux-386-2023.03.18.gz";
-      sha256 = "sha256-xeDqNtCoVo59jnX2m50s0ksEmyN4Kz7ghe2GAaNlWSE=";
+      url = "https://github.com/Dreamacro/clash/releases/download/premium/clash-linux-386-2023.04.13.gz";
+      sha256 = "sha256-WNqb/3e/8KnfqI3Pij7wNWgZ9LgflB3+bwlWdWio7sQ=";
     };
   };
   clash-premium-x86_64-darwin = {
     pname = "clash-premium-x86_64-darwin";
-    version = "2023.03.18";
+    version = "2023.04.13";
     src = fetchurl {
-      url = "https://github.com/Dreamacro/clash/releases/download/premium/clash-darwin-amd64-2023.03.18.gz";
-      sha256 = "sha256-8XFSEEWh2D+9QjB9+mCBJnIKIoC9XcPkX0wi7cYtAnE=";
+      url = "https://github.com/Dreamacro/clash/releases/download/premium/clash-darwin-amd64-2023.04.13.gz";
+      sha256 = "sha256-ag6CB8u6oDsGbXfpnGya/EvtdaG084+vYWyutMKvRAM=";
     };
   };
   clash-premium-x86_64-linux = {
     pname = "clash-premium-x86_64-linux";
-    version = "2023.03.18";
+    version = "2023.04.13";
     src = fetchurl {
-      url = "https://github.com/Dreamacro/clash/releases/download/premium/clash-linux-amd64-2023.03.18.gz";
-      sha256 = "sha256-ihKvpzrBTIwmmYzO1260XvwTRoXyCfi6ueOM4FFHu+Q=";
+      url = "https://github.com/Dreamacro/clash/releases/download/premium/clash-linux-amd64-2023.04.13.gz";
+      sha256 = "sha256-unGO/qT7LMgXDQCuaSgkKM9Dg80eIQoEKdOVApacUlI=";
     };
   };
   commit-notifier = {
@@ -241,16 +241,16 @@
   };
   rime-cantonese = {
     pname = "rime-cantonese";
-    version = "6ef56f5293e47e2770d4390b84fd5c7241b33c6c";
+    version = "7ffbef96c145f3d4030ff47f62ab6e1eb96da018";
     src = fetchgit {
       url = "https://github.com/rime/rime-cantonese.git";
-      rev = "6ef56f5293e47e2770d4390b84fd5c7241b33c6c";
+      rev = "7ffbef96c145f3d4030ff47f62ab6e1eb96da018";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-Hm9pfym4Z7b2UqBn7r21/uSw7DUnfjzCEOPbmRJNXjA=";
+      sha256 = "sha256-xyRH/OmUo7AHw4bqFqqs1Qpd9K0HOzCRWjos8zD6pUA=";
     };
-    date = "2023-04-06";
+    date = "2023-04-13";
   };
   rime-double-pinyin = {
     pname = "rime-double-pinyin";
@@ -293,16 +293,16 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "bfeb35dccbf9f2f40aa629317faa57b25826adc9";
+    version = "613b3dee7c8d3a0f55b4ee1327b9d4b69c090852";
     src = fetchgit {
       url = "https://github.com/iDvel/rime-ice.git";
-      rev = "bfeb35dccbf9f2f40aa629317faa57b25826adc9";
+      rev = "613b3dee7c8d3a0f55b4ee1327b9d4b69c090852";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-FfhU/2s8/5XGrPHLbY8E3DORYvpjXyu6YLyd3J8bFJc=";
+      sha256 = "sha256-siDbeYP378XI7rY0Er3mEzcKA7CAeHW0aHKFme9eR3A=";
     };
-    date = "2023-04-12";
+    date = "2023-04-13";
   };
   rime-loengfan = {
     pname = "rime-loengfan";
