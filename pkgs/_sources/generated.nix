@@ -3,22 +3,22 @@
 {
   anyrun = {
     pname = "anyrun";
-    version = "78acd78d66e833e5daa907dfd24ce57ce725f387";
+    version = "08114309a32d5afe3b60cbdc20ec569f6bf272c7";
     src = fetchgit {
       url = "https://github.com/Kirottu/anyrun.git";
-      rev = "78acd78d66e833e5daa907dfd24ce57ce725f387";
+      rev = "08114309a32d5afe3b60cbdc20ec569f6bf272c7";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-pnjyvv1/zL3If5B4oX7D6nQqQKLnhryBao1PtYjf3S0=";
+      sha256 = "sha256-SxxLoiQ0qIHvHxtkP3HGakZEkEdf15SLN71cwtFq5Js=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./anyrun-78acd78d66e833e5daa907dfd24ce57ce725f387/Cargo.lock;
+      lockFile = ./anyrun-08114309a32d5afe3b60cbdc20ec569f6bf272c7/Cargo.lock;
       outputHashes = {
         "kidex-common-0.1.0" = "sha256-sPzCTK0gdIYkKWxrtoPJ/F2zrG2ZKHOSmANW2g00fSQ=";
       };
     };
-    date = "2023-04-13";
+    date = "2023-04-14";
   };
   aws-sigv4-proxy = {
     pname = "aws-sigv4-proxy";
@@ -35,10 +35,10 @@
   };
   clash-for-windows = {
     pname = "clash-for-windows";
-    version = "0.20.20";
+    version = "0.20.21";
     src = fetchurl {
-      url = "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.20/Clash.for.Windows-0.20.20-x64-linux.tar.gz";
-      sha256 = "sha256-WfG4HuN+gLE60HdSXb0xXi//qUzX7DqnrP9H6QKE3TQ=";
+      url = "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.21/Clash.for.Windows-0.20.21-x64-linux.tar.gz";
+      sha256 = "sha256-1ahRhfO9BO0H1ez/5JXqspW4dYzwe5auwZcsPkUAlSE=";
     };
   };
   clash-premium-aarch64-linux = {
@@ -293,16 +293,16 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "613b3dee7c8d3a0f55b4ee1327b9d4b69c090852";
+    version = "57ef79a9ba73c41cea67a024b51d2d67b1d4ca44";
     src = fetchgit {
       url = "https://github.com/iDvel/rime-ice.git";
-      rev = "613b3dee7c8d3a0f55b4ee1327b9d4b69c090852";
+      rev = "57ef79a9ba73c41cea67a024b51d2d67b1d4ca44";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-siDbeYP378XI7rY0Er3mEzcKA7CAeHW0aHKFme9eR3A=";
+      sha256 = "sha256-lT+wUULO51O9kBQhqeX4rYsQl6/ff1Bf+SmOwnSEKrM=";
     };
-    date = "2023-04-13";
+    date = "2023-04-14";
   };
   rime-loengfan = {
     pname = "rime-loengfan";
