@@ -3,17 +3,17 @@
 {
   anyrun = {
     pname = "anyrun";
-    version = "08114309a32d5afe3b60cbdc20ec569f6bf272c7";
+    version = "ca8255c5320fd745376f69ea4b56cd72f613b4a2";
     src = fetchgit {
       url = "https://github.com/Kirottu/anyrun.git";
-      rev = "08114309a32d5afe3b60cbdc20ec569f6bf272c7";
+      rev = "ca8255c5320fd745376f69ea4b56cd72f613b4a2";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-SxxLoiQ0qIHvHxtkP3HGakZEkEdf15SLN71cwtFq5Js=";
+      sha256 = "sha256-qPAJoj1qmlN70nyz9jNzZoStEl7MX3g0YX4JJUJmpy4=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./anyrun-08114309a32d5afe3b60cbdc20ec569f6bf272c7/Cargo.lock;
+      lockFile = ./anyrun-ca8255c5320fd745376f69ea4b56cd72f613b4a2/Cargo.lock;
       outputHashes = {
         "kidex-common-0.1.0" = "sha256-sPzCTK0gdIYkKWxrtoPJ/F2zrG2ZKHOSmANW2g00fSQ=";
       };
