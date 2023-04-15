@@ -3,22 +3,22 @@
 {
   anyrun = {
     pname = "anyrun";
-    version = "ca8255c5320fd745376f69ea4b56cd72f613b4a2";
+    version = "1119137d27b6ee1803745dbb4288da23fef5f9d9";
     src = fetchgit {
       url = "https://github.com/Kirottu/anyrun.git";
-      rev = "ca8255c5320fd745376f69ea4b56cd72f613b4a2";
+      rev = "1119137d27b6ee1803745dbb4288da23fef5f9d9";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-qPAJoj1qmlN70nyz9jNzZoStEl7MX3g0YX4JJUJmpy4=";
+      sha256 = "sha256-+x5jW+mhUW9aBLE6lxEPx5KBRKYsl0M9OnyWmmfrTdU=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./anyrun-ca8255c5320fd745376f69ea4b56cd72f613b4a2/Cargo.lock;
+      lockFile = ./anyrun-1119137d27b6ee1803745dbb4288da23fef5f9d9/Cargo.lock;
       outputHashes = {
         "kidex-common-0.1.0" = "sha256-sPzCTK0gdIYkKWxrtoPJ/F2zrG2ZKHOSmANW2g00fSQ=";
       };
     };
-    date = "2023-04-14";
+    date = "2023-04-15";
   };
   aws-sigv4-proxy = {
     pname = "aws-sigv4-proxy";
@@ -293,16 +293,16 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "57ef79a9ba73c41cea67a024b51d2d67b1d4ca44";
+    version = "a7821adca1f0bc0c23ce531e7254ec3c05adcbb7";
     src = fetchgit {
       url = "https://github.com/iDvel/rime-ice.git";
-      rev = "57ef79a9ba73c41cea67a024b51d2d67b1d4ca44";
+      rev = "a7821adca1f0bc0c23ce531e7254ec3c05adcbb7";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-lT+wUULO51O9kBQhqeX4rYsQl6/ff1Bf+SmOwnSEKrM=";
+      sha256 = "sha256-N61FHxP1GgJV5oIl+EJsmFQJ9auUDktaNaZB3qm0xoc=";
     };
-    date = "2023-04-14";
+    date = "2023-04-15";
   };
   rime-loengfan = {
     pname = "rime-loengfan";
