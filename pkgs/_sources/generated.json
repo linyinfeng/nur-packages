@@ -2,7 +2,7 @@
     "anyrun": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./anyrun-1119137d27b6ee1803745dbb4288da23fef5f9d9/Cargo.lock",
+                "./anyrun-0874e09c3108816ee8b49a849e30f5dbce2a5d6e/Cargo.lock",
                 {
                     "kidex-common-0.1.0": "sha256-sPzCTK0gdIYkKWxrtoPJ/F2zrG2ZKHOSmANW2g00fSQ="
                 }
@@ -18,12 +18,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "1119137d27b6ee1803745dbb4288da23fef5f9d9",
-            "sha256": "sha256-+x5jW+mhUW9aBLE6lxEPx5KBRKYsl0M9OnyWmmfrTdU=",
+            "rev": "0874e09c3108816ee8b49a849e30f5dbce2a5d6e",
+            "sha256": "sha256-ITr5waF9UUVyZz5iQAYNIFQojWLQMZTo6WhKnGKLeu0=",
             "type": "git",
             "url": "https://github.com/Kirottu/anyrun.git"
         },
-        "version": "1119137d27b6ee1803745dbb4288da23fef5f9d9"
+        "version": "0874e09c3108816ee8b49a849e30f5dbce2a5d6e"
     },
     "aws-sigv4-proxy": {
         "cargoLocks": null,
@@ -470,12 +470,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "a7821adca1f0bc0c23ce531e7254ec3c05adcbb7",
-            "sha256": "sha256-N61FHxP1GgJV5oIl+EJsmFQJ9auUDktaNaZB3qm0xoc=",
+            "rev": "279f524930d05524dd792016827c7cb3f3e7fa72",
+            "sha256": "sha256-5ITDoN0d1OphFQyoiLdhSZmdRhEdqBg/raDAYuTlhus=",
             "type": "git",
             "url": "https://github.com/iDvel/rime-ice.git"
         },
-        "version": "a7821adca1f0bc0c23ce531e7254ec3c05adcbb7"
+        "version": "279f524930d05524dd792016827c7cb3f3e7fa72"
     },
     "rime-loengfan": {
         "cargoLocks": null,
