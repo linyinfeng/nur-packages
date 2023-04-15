@@ -216,11 +216,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-v1MXdDRjceYTSvMqje93QwIlLz0FxocKJoOPkRPqEZM=",
+            "sha256": "sha256-wwDHhFSZyPa6A47okss97m053ixVHfhhGRYoNVVjG+w=",
             "type": "url",
-            "url": "https://github.com/icalingua-plus-plus/icalingua-plus-plus/releases/download/v2.9.3/app-x86_64.asar"
+            "url": "https://github.com/icalingua-plus-plus/icalingua-plus-plus/releases/download/v2.9.4/app-x86_64.asar"
         },
-        "version": "v2.9.3"
+        "version": "v2.9.4"
     },
     "matrix-chatgpt-bot": {
         "cargoLocks": null,
