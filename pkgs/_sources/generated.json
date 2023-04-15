@@ -2,13 +2,13 @@
     "anyrun": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./anyrun-ca8255c5320fd745376f69ea4b56cd72f613b4a2/Cargo.lock",
+                "./anyrun-1119137d27b6ee1803745dbb4288da23fef5f9d9/Cargo.lock",
                 {
                     "kidex-common-0.1.0": "sha256-sPzCTK0gdIYkKWxrtoPJ/F2zrG2ZKHOSmANW2g00fSQ="
                 }
             ]
         },
-        "date": "2023-04-14",
+        "date": "2023-04-15",
         "extract": null,
         "name": "anyrun",
         "passthru": null,
@@ -18,12 +18,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "ca8255c5320fd745376f69ea4b56cd72f613b4a2",
-            "sha256": "sha256-qPAJoj1qmlN70nyz9jNzZoStEl7MX3g0YX4JJUJmpy4=",
+            "rev": "1119137d27b6ee1803745dbb4288da23fef5f9d9",
+            "sha256": "sha256-+x5jW+mhUW9aBLE6lxEPx5KBRKYsl0M9OnyWmmfrTdU=",
             "type": "git",
             "url": "https://github.com/Kirottu/anyrun.git"
         },
-        "version": "ca8255c5320fd745376f69ea4b56cd72f613b4a2"
+        "version": "1119137d27b6ee1803745dbb4288da23fef5f9d9"
     },
     "aws-sigv4-proxy": {
         "cargoLocks": null,
@@ -460,7 +460,7 @@
     },
     "rime-ice": {
         "cargoLocks": null,
-        "date": "2023-04-14",
+        "date": "2023-04-15",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -470,12 +470,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "57ef79a9ba73c41cea67a024b51d2d67b1d4ca44",
-            "sha256": "sha256-lT+wUULO51O9kBQhqeX4rYsQl6/ff1Bf+SmOwnSEKrM=",
+            "rev": "a7821adca1f0bc0c23ce531e7254ec3c05adcbb7",
+            "sha256": "sha256-N61FHxP1GgJV5oIl+EJsmFQJ9auUDktaNaZB3qm0xoc=",
             "type": "git",
             "url": "https://github.com/iDvel/rime-ice.git"
         },
-        "version": "57ef79a9ba73c41cea67a024b51d2d67b1d4ca44"
+        "version": "a7821adca1f0bc0c23ce531e7254ec3c05adcbb7"
     },
     "rime-loengfan": {
         "cargoLocks": null,
