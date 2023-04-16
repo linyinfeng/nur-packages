@@ -788,7 +788,7 @@
             "leaveDotGit": false,
             "name": null,
             "rev": "61648c55d9442b0b81989b8a069c66885e4da364",
-            "sha256": "sha256-Qlg5VWvGmqUuhRPb13Cox7c/xXSReOQjt8wZhR1CDCo=",
+            "sha256": "sha256-4e9YqbQjEeb1B2Q/y35CLWbnUlHZFObjPVcGosuXR7w=",
             "type": "git",
             "url": "https://github.com/Alexays/Waybar.git"
         },

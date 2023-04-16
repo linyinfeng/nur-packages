@@ -510,7 +510,7 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-Qlg5VWvGmqUuhRPb13Cox7c/xXSReOQjt8wZhR1CDCo=";
+      sha256 = "sha256-4e9YqbQjEeb1B2Q/y35CLWbnUlHZFObjPVcGosuXR7w=";
     };
     date = "2023-04-13";
   };
