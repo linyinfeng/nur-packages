@@ -65,6 +65,7 @@ let
     (empty "rimePackages/rime-terra-pinyin")
     (empty "rimePackages/rime-wubi")
     (empty "rimePackages/rime-wugniu")
+    (trivial "swayosd")
     (trivial "telegram-send")
     (empty "synapse-s3-storage-provider")
     (trivial "tg-send")

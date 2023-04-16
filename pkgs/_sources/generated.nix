@@ -421,6 +421,23 @@
     };
     date = "2019-01-20";
   };
+  swayosd = {
+    pname = "swayosd";
+    version = "a7c352c58b5349888f94ccd11c7b7a52d1172bbe";
+    src = fetchgit {
+      url = "https://github.com/ErikReider/SwayOSD.git";
+      rev = "a7c352c58b5349888f94ccd11c7b7a52d1172bbe";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sha256 = "sha256-szpy4NIMw6S/HqhoLH1LEx9yohFQXmtbz9XJd47P9XM=";
+    };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./swayosd-a7c352c58b5349888f94ccd11c7b7a52d1172bbe/Cargo.lock;
+      outputHashes = { };
+    };
+    date = "2023-03-28";
+  };
   synapse-s3-storage-provider = {
     pname = "synapse-s3-storage-provider";
     version = "v1.2.1";
@@ -488,7 +505,7 @@
     pname = "waybar-git";
     version = "61648c55d9442b0b81989b8a069c66885e4da364";
     src = fetchgit {
-      url = "https://github.com/alexays/waybar.git";
+      url = "https://github.com/Alexays/Waybar.git";
       rev = "61648c55d9442b0b81989b8a069c66885e4da364";
       fetchSubmodules = false;
       deepClone = false;

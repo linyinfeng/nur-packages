@@ -648,6 +648,30 @@
         },
         "version": "abd1ee98efbf170258fcf43875c21a4259e00b61"
     },
+    "swayosd": {
+        "cargoLocks": {
+            "Cargo.lock": [
+                "./swayosd-a7c352c58b5349888f94ccd11c7b7a52d1172bbe/Cargo.lock",
+                {}
+            ]
+        },
+        "date": "2023-03-28",
+        "extract": null,
+        "name": "swayosd",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "a7c352c58b5349888f94ccd11c7b7a52d1172bbe",
+            "sha256": "sha256-szpy4NIMw6S/HqhoLH1LEx9yohFQXmtbz9XJd47P9XM=",
+            "type": "git",
+            "url": "https://github.com/ErikReider/SwayOSD.git"
+        },
+        "version": "a7c352c58b5349888f94ccd11c7b7a52d1172bbe"
+    },
     "synapse-s3-storage-provider": {
         "cargoLocks": null,
         "date": null,
@@ -766,7 +790,7 @@
             "rev": "61648c55d9442b0b81989b8a069c66885e4da364",
             "sha256": "sha256-Qlg5VWvGmqUuhRPb13Cox7c/xXSReOQjt8wZhR1CDCo=",
             "type": "git",
-            "url": "https://github.com/alexays/waybar.git"
+            "url": "https://github.com/Alexays/Waybar.git"
         },
         "version": "61648c55d9442b0b81989b8a069c66885e4da364"
     },

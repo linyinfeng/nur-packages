@@ -37,7 +37,7 @@ packageSet = do
   gitPkg "rime-wubi" "https://github.com/rime/rime-wubi.git"
   gitPkg "rime-wugniu" "https://github.com/rime/rime-wugniu.git"
   gitPkg "telegram-send" "https://github.com/rahiel/telegram-send.git"
-  gitPkg "waybar-git" "https://github.com/alexays/waybar.git"
+  gitPkg "waybar-git" "https://github.com/Alexays/Waybar.git"
   anyRun
   fishPlugins
   commitNotifier
@@ -46,6 +46,7 @@ packageSet = do
   clashForWindows
   icalinguaPlusPlus
   mstickereditor
+  swayOsd
   wemeet
   yacd
   zeronsd
@@ -136,6 +137,16 @@ mstickereditor =
     package "mstickereditor"
       `fromGitHub` ("LuckyTurtleDev", "mstickereditor")
       `hasCargoLocks` ["Cargo.lock"]
+
+swayOsd :: PackageSet ()
+swayOsd =
+  define $
+    package "swayosd"
+      `sourceGit` url
+      `fetchGit` url
+      `hasCargoLocks` ["Cargo.lock"]
+  where
+    url = "https://github.com/ErikReider/SwayOSD.git"
 
 tgSend :: PackageSet ()
 tgSend =

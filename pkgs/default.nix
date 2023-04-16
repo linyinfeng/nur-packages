@@ -40,6 +40,7 @@ lib.makeScope newScope (
     nvfetcher-changes-commit = callPackage ./nvfetcher-changes-commit { };
     rimePackagesFor = librime: callPackage ./rime-packages { inherit librime; };
     rimePackages = lib.recurseIntoAttrs (self.rimePackagesFor librime);
+    swayosd = callPackage ./swayosd { };
     synapse-s3-storage-provider = callPackage ./synapse-s3-storage-provider { };
     telegram-send = callPackage ./telegram-send { };
     tg-send = callPackage ./tg-send { };
