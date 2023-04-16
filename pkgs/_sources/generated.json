@@ -751,6 +751,25 @@
         },
         "version": "svn1113"
     },
+    "waybar-git": {
+        "cargoLocks": null,
+        "date": "2023-04-13",
+        "extract": null,
+        "name": "waybar-git",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "61648c55d9442b0b81989b8a069c66885e4da364",
+            "sha256": "sha256-Qlg5VWvGmqUuhRPb13Cox7c/xXSReOQjt8wZhR1CDCo=",
+            "type": "git",
+            "url": "https://github.com/alexays/waybar.git"
+        },
+        "version": "61648c55d9442b0b81989b8a069c66885e4da364"
+    },
     "wemeet": {
         "cargoLocks": null,
         "date": null,

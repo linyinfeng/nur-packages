@@ -484,6 +484,19 @@
       sha256 = "sha256-OKysOm44T9wrAaopp9HfLlox5InlpV33AHGXRSjhDqc=";
     });
   };
+  waybar-git = {
+    pname = "waybar-git";
+    version = "61648c55d9442b0b81989b8a069c66885e4da364";
+    src = fetchgit {
+      url = "https://github.com/alexays/waybar.git";
+      rev = "61648c55d9442b0b81989b8a069c66885e4da364";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sha256 = "sha256-Qlg5VWvGmqUuhRPb13Cox7c/xXSReOQjt8wZhR1CDCo=";
+    };
+    date = "2023-04-13";
+  };
   wemeet = {
     pname = "wemeet";
     version = "3.14.0.402";

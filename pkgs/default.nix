@@ -45,6 +45,7 @@ lib.makeScope newScope (
     tg-send = callPackage ./tg-send { };
     trojan = callPackage ./trojan { };
     vlmcsd = callPackage ./vlmcsd { };
+    waybar-git = callPackage ./waybar-git { };
     wemeet = callPackage ./wemeet { };
     yacd = callPackage ./yacd { };
     zeronsd = callPackage ./zeronsd { };

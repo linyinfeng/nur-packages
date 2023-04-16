@@ -37,6 +37,7 @@ packageSet = do
   gitPkg "rime-wubi" "https://github.com/rime/rime-wubi.git"
   gitPkg "rime-wugniu" "https://github.com/rime/rime-wugniu.git"
   gitPkg "telegram-send" "https://github.com/rahiel/telegram-send.git"
+  gitPkg "waybar-git" "https://github.com/alexays/waybar.git"
   anyRun
   fishPlugins
   commitNotifier
