@@ -72,11 +72,6 @@ let
     (trivial "trojan")
     (trivial "vlmcsd")
     {
-      "waybar-git" = {
-        "waybar" = "waybar";
-      };
-    }
-    {
       "wemeet" = {
         "wemeet" = "wemeetapp";
         "wemeet-force-x11" = "wemeetapp-force-x11";
