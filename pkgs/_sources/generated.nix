@@ -131,10 +131,10 @@
   };
   icalingua-plus-plus = {
     pname = "icalingua-plus-plus";
-    version = "v2.9.4";
+    version = "v2.9.5";
     src = fetchurl {
-      url = "https://github.com/icalingua-plus-plus/icalingua-plus-plus/releases/download/v2.9.4/app-x86_64.asar";
-      sha256 = "sha256-wwDHhFSZyPa6A47okss97m053ixVHfhhGRYoNVVjG+w=";
+      url = "https://github.com/icalingua-plus-plus/icalingua-plus-plus/releases/download/v2.9.5/app-x86_64.asar";
+      sha256 = "sha256-X6f4bgd0mHOd9QUD4t/F+FQf7zz8UQSd4qX0MeuoM4w=";
     };
   };
   matrix-chatgpt-bot = {
