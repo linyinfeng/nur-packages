@@ -216,11 +216,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-X6f4bgd0mHOd9QUD4t/F+FQf7zz8UQSd4qX0MeuoM4w=",
+            "sha256": "sha256-B9BrmmRcbDZyvp6pz28TyQKa0zGLJWwiCjKhsdQGOR0=",
             "type": "url",
-            "url": "https://github.com/icalingua-plus-plus/icalingua-plus-plus/releases/download/v2.9.5/app-x86_64.asar"
+            "url": "https://github.com/icalingua-plus-plus/icalingua-plus-plus/releases/download/v2.9.6/app-x86_64.asar"
         },
-        "version": "v2.9.5"
+        "version": "v2.9.6"
     },
     "matrix-chatgpt-bot": {
         "cargoLocks": null,
@@ -460,7 +460,7 @@
     },
     "rime-ice": {
         "cargoLocks": null,
-        "date": "2023-04-23",
+        "date": "2023-04-25",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -470,12 +470,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "5fa65c613d4f1bd524cb4348d467048c4aa1d7b4",
-            "sha256": "sha256-rp9NoYkUVX4FfJW1+aRIPg/jHQeZUvgijJDHQV5JTPs=",
+            "rev": "10943c808a459d157cb9d97544148977f80ef1b7",
+            "sha256": "sha256-MHGCzQWKJb4zU2RM0QPCBGlV/9gKnQIYpnkb5SCMHsU=",
             "type": "git",
             "url": "https://github.com/iDvel/rime-ice.git"
         },
-        "version": "5fa65c613d4f1bd524cb4348d467048c4aa1d7b4"
+        "version": "10943c808a459d157cb9d97544148977f80ef1b7"
     },
     "rime-loengfan": {
         "cargoLocks": null,
