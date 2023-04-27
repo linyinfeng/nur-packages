@@ -84,20 +84,20 @@
   };
   dot-tar = {
     pname = "dot-tar";
-    version = "a4aeef015718a2b8e4a451e0e7ac367483995c3c";
+    version = "07a378cb52a5d31cf0813e9cab17b5b20b37500e";
     src = fetchgit {
       url = "https://github.com/linyinfeng/dot-tar.git";
-      rev = "a4aeef015718a2b8e4a451e0e7ac367483995c3c";
+      rev = "07a378cb52a5d31cf0813e9cab17b5b20b37500e";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-3E8byYbNyIyyFd/k30szYQgtA+qZS2mSrKJ7oSqL1Rk=";
+      sha256 = "sha256-+8BSwSMfG+euhnE6Y/BYKlDEaevi2TSmfv5e/bsJwRc=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./dot-tar-a4aeef015718a2b8e4a451e0e7ac367483995c3c/Cargo.lock;
+      lockFile = ./dot-tar-07a378cb52a5d31cf0813e9cab17b5b20b37500e/Cargo.lock;
       outputHashes = { };
     };
-    date = "2023-03-25";
+    date = "2023-04-27";
   };
   dpt-rp1-py = {
     pname = "dpt-rp1-py";
