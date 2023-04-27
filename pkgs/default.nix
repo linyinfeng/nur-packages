@@ -13,7 +13,6 @@ lib.makeScope newScope (
     });
 
     activate-dpt = callPackage ./activate-dpt { };
-    anyrun = callPackage ./anyrun { };
     aws-s3-reverse-proxy = callPackage ./aws-s3-reverse-proxy { };
     aws-sigv4-proxy = callPackage ./aws-sigv4-proxy { };
     canokey-udev-rules = callPackage ./canokey-udev-rules { };

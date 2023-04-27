@@ -38,7 +38,6 @@ packageSet = do
   gitPkg "rime-wugniu" "https://github.com/rime/rime-wugniu.git"
   gitPkg "telegram-send" "https://github.com/rahiel/telegram-send.git"
   gitPkg "waybar-git" "https://github.com/Alexays/Waybar.git"
-  anyRun
   fishPlugins
   commitNotifier
   tgSend
@@ -65,16 +64,6 @@ ghPkgTag owner repo f = define $ package repo `fromGitHubTag` (owner, repo, f)
 
 gitPkg :: Text -> Text -> PackageSet ()
 gitPkg name git = define $ package name `sourceGit` git `fetchGit` git
-
-anyRun :: PackageSet ()
-anyRun =
-  define $
-    package "anyrun"
-      `sourceGit` url
-      `fetchGit` url
-      `hasCargoLocks` ["Cargo.lock"]
-  where
-    url = "https://github.com/Kirottu/anyrun.git"
 
 commitNotifier :: PackageSet ()
 commitNotifier =

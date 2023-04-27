@@ -1,30 +1,4 @@
 {
-    "anyrun": {
-        "cargoLocks": {
-            "Cargo.lock": [
-                "./anyrun-0874e09c3108816ee8b49a849e30f5dbce2a5d6e/Cargo.lock",
-                {
-                    "kidex-common-0.1.0": "sha256-sPzCTK0gdIYkKWxrtoPJ/F2zrG2ZKHOSmANW2g00fSQ="
-                }
-            ]
-        },
-        "date": "2023-04-15",
-        "extract": null,
-        "name": "anyrun",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "rev": "0874e09c3108816ee8b49a849e30f5dbce2a5d6e",
-            "sha256": "sha256-ITr5waF9UUVyZz5iQAYNIFQojWLQMZTo6WhKnGKLeu0=",
-            "type": "git",
-            "url": "https://github.com/Kirottu/anyrun.git"
-        },
-        "version": "0874e09c3108816ee8b49a849e30f5dbce2a5d6e"
-    },
     "aws-sigv4-proxy": {
         "cargoLocks": null,
         "date": "2023-03-30",
