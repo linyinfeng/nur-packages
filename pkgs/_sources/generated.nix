@@ -16,10 +16,10 @@
   };
   clash-for-windows = {
     pname = "clash-for-windows";
-    version = "0.20.21";
+    version = "0.20.22";
     src = fetchurl {
-      url = "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.21/Clash.for.Windows-0.20.21-x64-linux.tar.gz";
-      sha256 = "sha256-1ahRhfO9BO0H1ez/5JXqspW4dYzwe5auwZcsPkUAlSE=";
+      url = "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.22/Clash.for.Windows-0.20.22-x64-linux.tar.gz";
+      sha256 = "sha256-9HuM4INcDBD8sU7JrjbbEdYOVz9ZQWZlT4Lww/LXQ8Q=";
     };
   };
   clash-premium-aarch64-linux = {
@@ -274,14 +274,14 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "c0719699ff326d4d4bc0ea980de5e16b996798c8";
+    version = "17c2e0bfb3689e4ed6922381d0f8a5a84c9752b1";
     src = fetchgit {
       url = "https://github.com/iDvel/rime-ice.git";
-      rev = "c0719699ff326d4d4bc0ea980de5e16b996798c8";
+      rev = "17c2e0bfb3689e4ed6922381d0f8a5a84c9752b1";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-a3i+GmQCuqmmHsf1Sp33nSDOtnRrFl9N84cnqC29pw4=";
+      sha256 = "sha256-u7VBipwJej7rV2fUjybAcdmrgOjO3mJUcQzxMm+4uVw=";
     };
     date = "2023-04-27";
   };
@@ -404,20 +404,20 @@
   };
   swayosd = {
     pname = "swayosd";
-    version = "a7c352c58b5349888f94ccd11c7b7a52d1172bbe";
+    version = "8ef76c1306f68521ef103a59b7c1348c87a0ed61";
     src = fetchgit {
       url = "https://github.com/ErikReider/SwayOSD.git";
-      rev = "a7c352c58b5349888f94ccd11c7b7a52d1172bbe";
+      rev = "8ef76c1306f68521ef103a59b7c1348c87a0ed61";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-szpy4NIMw6S/HqhoLH1LEx9yohFQXmtbz9XJd47P9XM=";
+      sha256 = "sha256-rP7vUde3wm/gDW8aeZNJNGL2KHIgeFxO4mfXCr220+Q=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./swayosd-a7c352c58b5349888f94ccd11c7b7a52d1172bbe/Cargo.lock;
+      lockFile = ./swayosd-8ef76c1306f68521ef103a59b7c1348c87a0ed61/Cargo.lock;
       outputHashes = { };
     };
-    date = "2023-03-28";
+    date = "2023-04-27";
   };
   synapse-s3-storage-provider = {
     pname = "synapse-s3-storage-provider";
