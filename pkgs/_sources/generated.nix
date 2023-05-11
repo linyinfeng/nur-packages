@@ -129,17 +129,6 @@
       sha256 = "sha256-UkHp4ELnaaavFrxpOiqqttrYg99xhvN1yHewgL6vHf8=";
     };
   };
-  matrix-chatgpt-bot = {
-    pname = "matrix-chatgpt-bot";
-    version = "v3.1.1";
-    src = fetchFromGitHub ({
-      owner = "matrixgpt";
-      repo = "matrix-chatgpt-bot";
-      rev = "v3.1.1";
-      fetchSubmodules = false;
-      sha256 = "sha256-FxM8hO26qR1B3ph+6elAyNABqVW+dLFNiiUBdzOH2/w=";
-    });
-  };
   mstickereditor = {
     pname = "mstickereditor";
     version = "v0.3.1";
