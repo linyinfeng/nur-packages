@@ -172,16 +172,16 @@
   };
   plugin-bang-bang = {
     pname = "plugin-bang-bang";
-    version = "816c66df34e1cb94a476fa6418d46206ef84e8d3";
+    version = "ec991b80ba7d4dda7a962167b036efc5c2d79419";
     src = fetchgit {
       url = "https://github.com/oh-my-fish/plugin-bang-bang";
-      rev = "816c66df34e1cb94a476fa6418d46206ef84e8d3";
+      rev = "ec991b80ba7d4dda7a962167b036efc5c2d79419";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-35xXBWCciXl4jJrFUUN5NhnHdzk6+gAxetPxXCv4pDc=";
+      sha256 = "sha256-oPPCtFN2DPuM//c48SXb4TrFRjJtccg0YPXcAo0Lxq0=";
     };
-    date = "2022-11-27";
+    date = "2023-07-23";
   };
   plugin-git = {
     pname = "plugin-git";
