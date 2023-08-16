@@ -430,17 +430,17 @@
   };
   swayosd = {
     pname = "swayosd";
-    version = "ed835ab311c922128b6089544abe1bdcd4956fc4";
+    version = "8159c9e9962ce19f6fb78201d4d34e5817f53b45";
     src = fetchgit {
       url = "https://github.com/ErikReider/SwayOSD.git";
-      rev = "ed835ab311c922128b6089544abe1bdcd4956fc4";
+      rev = "8159c9e9962ce19f6fb78201d4d34e5817f53b45";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-SQR/qEvT2ccDbQlzCDFMFMfbwr79jKrons8aq2h6EIY=";
+      sha256 = "sha256-kGd4/eQkhvxEL3/LToBDjE/JIR8m6w9vdFUrRTyylCE=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./swayosd-ed835ab311c922128b6089544abe1bdcd4956fc4/Cargo.lock;
+      lockFile = ./swayosd-8159c9e9962ce19f6fb78201d4d34e5817f53b45/Cargo.lock;
       outputHashes = { };
     };
     date = "2023-08-15";
@@ -510,16 +510,16 @@
   };
   waybar-git = {
     pname = "waybar-git";
-    version = "e90c66a10204bc6053ee295cf7024fb24f9f2266";
+    version = "66b71cc8577d1296323b637afc89524a00779776";
     src = fetchgit {
       url = "https://github.com/Alexays/Waybar.git";
-      rev = "e90c66a10204bc6053ee295cf7024fb24f9f2266";
+      rev = "66b71cc8577d1296323b637afc89524a00779776";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-TSv3Ejr/3m1bCvzlZVXEMBwTEAQsD00Zz4P8kyyIJUk=";
+      sha256 = "sha256-C2OMWRT6Xn2LwXz6H2/xPK1SZoh8Csz4QmrgNDMiPj4=";
     };
-    date = "2023-08-14";
+    date = "2023-08-15";
   };
   wemeet = {
     pname = "wemeet";
