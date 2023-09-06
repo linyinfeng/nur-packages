@@ -1,7 +1,8 @@
-{ sources
+{ callPackage
+, system
+, fetchurl
 , lib
 , autoPatchelfHook
-, stdenv
 , dpkg
 , makeDesktopItem
 , rsync
@@ -10,6 +11,7 @@
 }:
 
 let
+  sourceInfo = builtins.fromJSON (lib.readFile ./source.json);
   desktopItem = makeDesktopItem
     {
       name = "wemeetapp";
@@ -31,8 +33,12 @@ let
     };
   };
 in
-qt5.mkDerivation rec {
-  inherit (sources.wemeet) pname version src;
+qt5.mkDerivation {
+  pname = "wemeet";
+  inherit (sourceInfo.${system}) version;
+  src = fetchurl {
+    inherit (sourceInfo.${system}) url sha512;
+  };
 
   nativeBuildInputs = [
     autoPatchelfHook
@@ -94,11 +100,16 @@ qt5.mkDerivation rec {
     cp -r opt/wemeet/icons "$out/share"
   '';
 
+  passthru = {
+    updateScriptEnabled = true;
+    updateScript = let script = callPackage ./update.nix { }; in [ "${script}" ];
+  };
+
   meta = with lib; {
-    homepage = https://meeting.tencent.com;
+    homepage = "https://meeting.tencent.com";
     description = "Tencent Video Conferencing, tencent meeting";
     license = licenses.unfree;
-    platforms = [ "x86_64-linux" ];
+    platforms = lib.attrNames sourceInfo;
     maintainers = with maintainers; [ yinfeng ];
   };
 }

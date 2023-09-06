@@ -521,14 +521,6 @@
     };
     date = "2023-09-01";
   };
-  wemeet = {
-    pname = "wemeet";
-    version = "3.15.1.400";
-    src = fetchurl {
-      url = "https://updatecdn.meeting.qq.com/cos/174f137e819ba174c7be6949bb03e665/TencentMeeting_0300000000_3.15.1.400_x86_64_default.publish.deb";
-      sha256 = "sha256-mAUXh/C4Vv4cCpiVszbonVVsQjKSXioQsFuEcS3QXFI=";
-    };
-  };
   yacd = {
     pname = "yacd";
     version = "v0.3.8";
