@@ -97,7 +97,11 @@ qt5.mkDerivation {
     }
 
     mkdir -p "$out/share"
-    cp -r opt/wemeet/icons "$out/share"
+    if [ -d opt/wemeet/icons ]; then
+      cp -r opt/wemeet/icons "$out/share"
+    else
+      echo "directory 'opt/wemeet/icons' not found"
+    fi
   '';
 
   passthru = {
