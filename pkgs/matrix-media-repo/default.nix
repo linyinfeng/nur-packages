@@ -1,6 +1,6 @@
-{ buildGo118Module, fetchFromGitHub, lib, nix-update-script, libde265 }:
+{ buildGoModule, fetchFromGitHub, lib, nix-update-script, libde265, pkg-config, libheif }:
 
-buildGo118Module rec {
+buildGoModule rec {
   pname = "matrix-media-repo";
   version = "1.3.0";
   src = fetchFromGitHub {
@@ -13,6 +13,14 @@ buildGo118Module rec {
   vendorSha256 = "sha256-IiAH2mMV8bm6b7EjByDl03M+XbDJr2n/JQPZZgbAZ3Y=";
 
   proxyVendor = true;
+
+  nativeBuildInputs = [
+    pkg-config
+  ];
+
+  buildInputs = [
+    libheif
+  ];
 
   preBuild = ''
     go run ./cmd/compile_assets
@@ -34,5 +42,9 @@ buildGo118Module rec {
     homepage = "https://github.com/turt2live/matrix-media-repo";
     license = licenses.mit;
     maintainers = with maintainers; [ yinfeng ];
+    # TODO broken
+    # due to outdated libheif version in nixpkgs
+    # matrix-media-repo requires libheif 1.16.2
+    broken = true;
   };
 }
