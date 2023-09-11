@@ -39,7 +39,9 @@ let
     ## update scripts
     echo "run update scripts"
     function handle_update_script {
-      rm "${updateScriptCommitMessageFile}"
+      f [ -f "${updateScriptCommitMessageFile}" ]; then
+        rm "${updateScriptCommitMessageFile}"
+      fi
       "$@" --write-commit-message "${updateScriptCommitMessageFile}"
       if [ -f "${updateScriptCommitMessageFile}" ]; then
         nix fmt
