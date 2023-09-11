@@ -39,7 +39,7 @@ let
     ## update scripts
     echo "run update scripts"
     function handle_update_script {
-      f [ -f "${updateScriptCommitMessageFile}" ]; then
+      if [ -f "${updateScriptCommitMessageFile}" ]; then
         rm "${updateScriptCommitMessageFile}"
       fi
       "$@" --write-commit-message "${updateScriptCommitMessageFile}"
