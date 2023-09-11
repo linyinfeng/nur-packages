@@ -1,7 +1,11 @@
-{ writeShellScript, yarn2nix }:
+{ writeShellScript, lib, yarn2nix, nix-update }:
 
 writeShellScript "update-matrix-chatgpt-bot" ''
   set -e
+
+  export PATH="${lib.mkBinPath [yarn2nix nix-update]}:$PATH"
+
+  nix-update matrix-chatgpt-bot "$@"
 
   src=$(nix build --no-link --print-out-paths .#matrix-chatgpt-bot.src)
 
@@ -15,7 +19,7 @@ writeShellScript "update-matrix-chatgpt-bot" ''
   update_file "package.json"
   update_file "yarn.lock"
 
-  ${yarn2nix}/bin/yarn2nix > yarn.nix
+  yarn2nix > yarn.nix
 
   rm yarn.lock
 
