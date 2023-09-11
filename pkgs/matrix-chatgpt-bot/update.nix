@@ -5,7 +5,7 @@ writeShellScript "update-matrix-chatgpt-bot" ''
 
   export PATH="${lib.makeBinPath [yarn2nix nix-update]}:$PATH"
 
-  nix-update matrix-chatgpt-bot "$@"
+  nix-update matrix-chatgpt-bot "$@" --override-filename "pkgs/matrix-chatgpt-bot/default.nix"
 
   src=$(nix build --no-link --print-out-paths .#matrix-chatgpt-bot.src)
 
