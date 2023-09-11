@@ -1,8 +1,6 @@
 { lib
 , selfLib
 , writeShellScriptBin
-, nixVersions
-, nix-update
 , nvfetcher-self
 , nvfetcher-changes-commit
 , path
