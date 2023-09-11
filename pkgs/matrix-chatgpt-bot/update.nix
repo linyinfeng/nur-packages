@@ -3,7 +3,7 @@
 writeShellScript "update-matrix-chatgpt-bot" ''
   set -e
 
-  export PATH="${lib.mkBinPath [yarn2nix nix-update]}:$PATH"
+  export PATH="${lib.makeBinPath [yarn2nix nix-update]}:$PATH"
 
   nix-update matrix-chatgpt-bot "$@"
 
