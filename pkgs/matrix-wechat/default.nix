@@ -32,5 +32,6 @@ buildGoModule rec {
     homepage = "https://github.com/duo/matrix-wechat";
     license = licenses.agpl3;
     maintainers = with maintainers; [ yinfeng ];
+    broken = !(versionAtLeast (versions.majorMinor trivial.version) "23.11");
   };
 }
