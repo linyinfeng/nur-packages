@@ -43,7 +43,7 @@ let
     (trivial "mstickereditor")
     (trivial "nvfetcher-changes")
     (trivial "nvfetcher-changes-commit")
-    (trivial "rcon-cli")
+    { "rcon-cli" = { "gorcon" = "gorcon"; }; }
     (empty "rimePackages/librime")
     (empty "rimePackages/rimeDataBuildHook")
     (empty "rimePackages/rime-bopomofo")
