@@ -43,6 +43,7 @@ let
     (trivial "mstickereditor")
     (trivial "nvfetcher-changes")
     (trivial "nvfetcher-changes-commit")
+    (trivial "rcon-cli")
     (empty "rimePackages/librime")
     (empty "rimePackages/rimeDataBuildHook")
     (empty "rimePackages/rime-bopomofo")
