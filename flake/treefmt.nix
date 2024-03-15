@@ -6,7 +6,7 @@
       treefmt = {
         projectRootFile = "flake.nix";
         programs = {
-          nixpkgs-fmt.enable = true;
+          nixfmt-rfc-style.enable = true;
           ormolu.enable = true;
           hlint.enable = true;
           shfmt.enable = true;
