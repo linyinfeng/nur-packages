@@ -58,7 +58,7 @@ in
             List of overlays layers used to extend Nixpkgs.
           '';
         };
-        corssOverlays = lib.mkOption {
+        crossOverlays = lib.mkOption {
           type = with lib.types; listOf raw;
           default = [ ];
           description = ''
