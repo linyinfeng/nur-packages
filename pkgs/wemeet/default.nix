@@ -9,6 +9,8 @@
   rsync,
   fd,
   qt5,
+  libyuv,
+  libjpeg8,
 }:
 
 let
@@ -52,6 +54,8 @@ qt5.mkDerivation {
   buildInputs = with qt5; [
     qtwebengine
     qtx11extras
+    libyuv
+    libjpeg8
   ];
 
   installPhase = ''
