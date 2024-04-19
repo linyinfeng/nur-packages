@@ -109,7 +109,7 @@ qt5.mkDerivation {
       let
         script = callPackage ./update.nix { };
       in
-      [ "${script}" ];
+      [ "${script}/bin/update-wemeet" ];
   };
 
   meta = with lib; {
