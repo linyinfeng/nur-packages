@@ -1,16 +1,20 @@
 {
   writeShellApplication,
+  python3,
   curl,
   jq,
   urlencode,
+  moreutils,
 }:
 
 writeShellApplication {
   name = "update-wemeet";
   runtimeInputs = [
+    python3
     curl
     jq
     urlencode
+    moreutils
   ];
   text = ''
     while [[ $# -gt 0 ]]; do
@@ -30,12 +34,17 @@ writeShellApplication {
 
     # query.json is taken from https://meeting.tencent.com/download using browser debugger
     query_param=$(jq --raw-output @uri ./query.json)
-    nonce_param=$(set +o pipefail; tr -dc 'a-zA-Z' </dev/urandom | fold -w 16 | head -n 1)
+    nonce_param=$(python3 <<EOF
+    import secrets
+    import string
+    print('''.join(secrets.choice(string.ascii_letters) for i in range(16)))
+    EOF
+    )
     query_url="https://meeting.tencent.com/web-service/query-download-info?q=$query_param&nonce=$nonce_param"
     echo "query url: $query_url"
 
     echo "curl"
-    curl "$query_url" | jq '.' >raw_source.json
+    curl --verbose "$query_url" | jq '.' >raw_source.json
 
     if [[ -n "$commit_message_file" ]]; then
       if [[ -f "$commit_message_file" ]]; then
