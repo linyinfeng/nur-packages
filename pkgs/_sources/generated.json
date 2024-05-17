@@ -136,6 +136,26 @@
         },
         "version": "lts-v6.6.30-linux-240508T063812Z"
     },
+    "linux-intel-mainline-tracking": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "linux-intel-mainline-tracking",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "intel",
+            "repo": "mainline-tracking",
+            "rev": "mainline-tracking-v6.8-linux-240509T064507Z",
+            "sha256": "sha256-j16fF+LUm3dIyypCiZKIs3XYRUcfzZRxuxzT/yLXAfc=",
+            "type": "github"
+        },
+        "version": "mainline-tracking-v6.8-linux-240509T064507Z"
+    },
     "lpac": {
         "cargoLocks": null,
         "date": null,

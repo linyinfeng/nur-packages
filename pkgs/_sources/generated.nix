@@ -92,6 +92,17 @@
       sha256 = "sha256-pcEivADw/L+mpYkQkCQj2v+pU2v2gsx2jEo6f3PJ4r8=";
     };
   };
+  linux-intel-mainline-tracking = {
+    pname = "linux-intel-mainline-tracking";
+    version = "mainline-tracking-v6.8-linux-240509T064507Z";
+    src = fetchFromGitHub {
+      owner = "intel";
+      repo = "mainline-tracking";
+      rev = "mainline-tracking-v6.8-linux-240509T064507Z";
+      fetchSubmodules = false;
+      sha256 = "sha256-j16fF+LUm3dIyypCiZKIs3XYRUcfzZRxuxzT/yLXAfc=";
+    };
+  };
   lpac = {
     pname = "lpac";
     version = "v2.0.1";
