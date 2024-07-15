@@ -2,6 +2,7 @@
 # taken from nixpkgs pkgs/servers/minio/default.nix
 {
   lib,
+  go,
   buildGoModule,
   fetchFromGitHub,
   nix-update-script,
@@ -71,7 +72,7 @@ buildGoModule rec {
     changelog = "https://github.com/minio/minio/releases/tag/RELEASE.${version}";
     platforms = platforms.unix;
     license = licenses.agpl3Plus;
-    broken = !(versionAtLeast (versions.majorMinor trivial.version) "22.11");
+    broken = !(lib.versionAtLeast go.version "1.22");
     maintainers = with maintainers; [ yinfeng ];
   };
 }
