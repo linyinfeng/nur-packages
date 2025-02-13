@@ -8,13 +8,13 @@
 {
   aws-sigv4-proxy = {
     pname = "aws-sigv4-proxy";
-    version = "v1.9";
+    version = "v1.10";
     src = fetchFromGitHub {
       owner = "awslabs";
       repo = "aws-sigv4-proxy";
-      rev = "v1.9";
+      rev = "v1.10";
       fetchSubmodules = false;
-      sha256 = "sha256-0yr3vT9s25fBasi1/sdQeBwIxWGndHfQfPkZcI0aHko=";
+      sha256 = "sha256-DC9JJeMdwxKeALQYA53BmMdAxQlUfPowAEul7+dTh4s=";
     };
   };
   cowrie = {
@@ -424,13 +424,13 @@
   };
   secureboot_objects = {
     pname = "secureboot_objects";
-    version = "v1.3.0";
+    version = "v1.3.1-signed";
     src = fetchFromGitHub {
       owner = "microsoft";
       repo = "secureboot_objects";
-      rev = "v1.3.0";
+      rev = "v1.3.1-signed";
       fetchSubmodules = false;
-      sha256 = "sha256-SKcAAQ7Wmc0np2McGCbmqZ1dMhilZeqZA8ocH9XcaaM=";
+      sha256 = "sha256-irMmeq1qsdx/3tNlVfTaQ2PIZdYLpNChUue8xBx4c0M=";
     };
   };
   swayosd = {
