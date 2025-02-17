@@ -312,17 +312,17 @@
   };
   rime-luna-pinyin = {
     pname = "rime-luna-pinyin";
-    version = "1b3a2e58cd45e556efafb39c672fe8cb7ada3461";
+    version = "5e538983830083826eadbcfac7721ea59c4be991";
     src = fetchgit {
       url = "https://github.com/rime/rime-luna-pinyin.git";
-      rev = "1b3a2e58cd45e556efafb39c672fe8cb7ada3461";
+      rev = "5e538983830083826eadbcfac7721ea59c4be991";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-C0fB0S/m5GTvR0JygosQGAX+NAeP0xDypsjyggEV3mo=";
+      sha256 = "sha256-Kkj6POQpelmh1KMc5jvoiLaDg3SvcY2P3/XGk3Kp1Qg=";
     };
-    date = "2025-01-31";
+    date = "2025-02-17";
   };
   rime-pinyin-simp = {
     pname = "rime-pinyin-simp";
