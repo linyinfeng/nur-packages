@@ -20,6 +20,32 @@
         },
         "version": "v1.10"
     },
+    "baibot": {
+        "cargoLocks": {
+            "Cargo.lock": [
+                "./baibot-v1.4.1/Cargo.lock",
+                {}
+            ]
+        },
+        "date": null,
+        "extract": null,
+        "name": "baibot",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "etkecc",
+            "repo": "baibot",
+            "rev": "v1.4.1",
+            "sha256": "sha256-LeLdKedwyjSubZ5vEqI+YmqTsd5+Ai+2Pof/I9HpgNQ=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v1.4.1"
+    },
     "cowrie": {
         "cargoLocks": null,
         "date": null,

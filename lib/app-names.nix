@@ -43,6 +43,7 @@ let
     (trivial "activate-dpt")
     (trivial "aws-s3-reverse-proxy")
     (trivial "aws-sigv4-proxy")
+    (trivial "baibot")
     (trivial "cf-terraforming")
     (trivial "cowrie")
     (trivial "devPackages/nvfetcher-self")

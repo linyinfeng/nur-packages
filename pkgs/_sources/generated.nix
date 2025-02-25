@@ -17,6 +17,23 @@
       sha256 = "sha256-DC9JJeMdwxKeALQYA53BmMdAxQlUfPowAEul7+dTh4s=";
     };
   };
+  baibot = {
+    pname = "baibot";
+    version = "v1.4.1";
+    src = fetchFromGitHub {
+      owner = "etkecc";
+      repo = "baibot";
+      rev = "v1.4.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-LeLdKedwyjSubZ5vEqI+YmqTsd5+Ai+2Pof/I9HpgNQ=";
+    };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./baibot-v1.4.1/Cargo.lock;
+      outputHashes = {
+
+      };
+    };
+  };
   cowrie = {
     pname = "cowrie";
     version = "v2.6.1";

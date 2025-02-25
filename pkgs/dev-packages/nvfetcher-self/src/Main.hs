@@ -43,6 +43,7 @@ packageSet = do
   -- keep-sorted end
 
   -- keep-sorted start
+  baibot
   dotTar
   fishPlugins
   icalinguaPlusPlus
@@ -152,5 +153,5 @@ baibot :: PackageSet ()
 baibot =
   define $
     package "baibot"
-      `fromGitHub` ("etkecc", "baibot")
+      `fromGitHubTag` ("etkecc", "baibot", id)
       `hasCargoLocks` ["Cargo.lock"]
