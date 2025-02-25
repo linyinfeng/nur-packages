@@ -136,12 +136,12 @@
             "name": null,
             "owner": "intel",
             "repo": "linux-intel-lts",
-            "rev": "lts-v6.12.13-linux-250212T000422Z",
-            "sha256": "sha256-q9WR/7sxvNSnOQgg+My9AhbyiW98UPT99WoRHYkrQCk=",
+            "rev": "lts-v6.12.15-linux-250219T061943Z",
+            "sha256": "sha256-ULPO3ZqSpkA4bb5FmeDZctOeJgUfIDbFcbyPuVWY1JE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "lts-v6.12.13-linux-250212T000422Z"
+        "version": "lts-v6.12.15-linux-250219T061943Z"
     },
     "linux-intel-mainline-tracking": {
         "cargoLocks": null,
@@ -646,12 +646,12 @@
             "name": null,
             "owner": "microsoft",
             "repo": "secureboot_objects",
-            "rev": "v1.3.1-signed",
-            "sha256": "sha256-irMmeq1qsdx/3tNlVfTaQ2PIZdYLpNChUue8xBx4c0M=",
+            "rev": "v1.4.0-signed",
+            "sha256": "sha256-AnP4izg3EdZTxykKFtrQB6JL86YLinikt2Mf77YuaZA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.3.1-signed"
+        "version": "v1.4.0-signed"
     },
     "swayosd": {
         "cargoLocks": {

@@ -35,13 +35,6 @@ lib.makeScope newScope (
     );
     icalingua-plus-plus = callPackage ./icalingua-plus-plus { };
     lpac = callPackage ./lpac { };
-    matrix-chatgpt-bot = callPackage ./matrix-chatgpt-bot {
-      matrix-sdk-crypto-nodejs =
-        if pkgs.matrix-sdk-crypto-nodejs.version == "0.1.0-beta.3" then
-          pkgs.matrix-sdk-crypto-nodejs
-        else
-          pkgs.matrix-sdk-crypto-nodejs-0_1_0-beta_3;
-    };
     matrix-media-repo = callPackage ./matrix-media-repo { };
     matrix-qq = callPackage ./matrix-qq { };
     matrix-wechat = callPackage ./matrix-wechat { };

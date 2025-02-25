@@ -40,7 +40,6 @@ let
     (empty "fishPlugins/replay")
     (trivial "icalingua-plus-plus")
     (trivial "lpac")
-    (trivial "matrix-chatgpt-bot")
     {
       "matrix-media-repo" = {
         "matrix-media-repo" = "media_repo";

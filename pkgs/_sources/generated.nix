@@ -83,13 +83,13 @@
   };
   linux-intel-lts = {
     pname = "linux-intel-lts";
-    version = "lts-v6.12.13-linux-250212T000422Z";
+    version = "lts-v6.12.15-linux-250219T061943Z";
     src = fetchFromGitHub {
       owner = "intel";
       repo = "linux-intel-lts";
-      rev = "lts-v6.12.13-linux-250212T000422Z";
+      rev = "lts-v6.12.15-linux-250219T061943Z";
       fetchSubmodules = false;
-      sha256 = "sha256-q9WR/7sxvNSnOQgg+My9AhbyiW98UPT99WoRHYkrQCk=";
+      sha256 = "sha256-ULPO3ZqSpkA4bb5FmeDZctOeJgUfIDbFcbyPuVWY1JE=";
     };
   };
   linux-intel-mainline-tracking = {
@@ -424,13 +424,13 @@
   };
   secureboot_objects = {
     pname = "secureboot_objects";
-    version = "v1.3.1-signed";
+    version = "v1.4.0-signed";
     src = fetchFromGitHub {
       owner = "microsoft";
       repo = "secureboot_objects";
-      rev = "v1.3.1-signed";
+      rev = "v1.4.0-signed";
       fetchSubmodules = false;
-      sha256 = "sha256-irMmeq1qsdx/3tNlVfTaQ2PIZdYLpNChUue8xBx4c0M=";
+      sha256 = "sha256-AnP4izg3EdZTxykKFtrQB6JL86YLinikt2Mf77YuaZA=";
     };
   };
   swayosd = {
