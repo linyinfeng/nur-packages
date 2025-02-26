@@ -440,7 +440,7 @@
     },
     "rime-essay": {
         "cargoLocks": null,
-        "date": "2025-02-19",
+        "date": "2025-02-26",
         "extract": null,
         "name": "rime-essay",
         "passthru": null,
@@ -450,13 +450,13 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "e5e718c26b1069d443e5b2967e7404c8c0b63a6e",
-            "sha256": "sha256-4MYrdUHakpi6sKuFhjbeZBXJffKi+QCGyzoE4Q8NjIo=",
+            "rev": "8950960f49a700af0bbcac3ce0cdadb190e719c6",
+            "sha256": "sha256-sCoh6iOqBfywaBx4RR47mqjsU+qTtJ3CYFH2ach5mTA=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/rime/rime-essay.git"
         },
-        "version": "e5e718c26b1069d443e5b2967e7404c8c0b63a6e"
+        "version": "8950960f49a700af0bbcac3ce0cdadb190e719c6"
     },
     "rime-ice": {
         "cargoLocks": null,
