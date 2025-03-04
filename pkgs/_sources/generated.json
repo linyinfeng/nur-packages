@@ -23,7 +23,7 @@
     "baibot": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./baibot-v1.4.1/Cargo.lock",
+                "./baibot-v1.5.0/Cargo.lock",
                 {}
             ]
         },
@@ -39,12 +39,12 @@
             "name": null,
             "owner": "etkecc",
             "repo": "baibot",
-            "rev": "v1.4.1",
-            "sha256": "sha256-LeLdKedwyjSubZ5vEqI+YmqTsd5+Ai+2Pof/I9HpgNQ=",
+            "rev": "v1.5.0",
+            "sha256": "sha256-DwhKeitbue6gz7cWcA8VJNa0AlKmS3OVHTBaXCy0WGE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.4.1"
+        "version": "v1.5.0"
     },
     "cowrie": {
         "cargoLocks": null,
@@ -162,12 +162,12 @@
             "name": null,
             "owner": "intel",
             "repo": "linux-intel-lts",
-            "rev": "lts-v6.12.15-linux-250219T061943Z",
-            "sha256": "sha256-ULPO3ZqSpkA4bb5FmeDZctOeJgUfIDbFcbyPuVWY1JE=",
+            "rev": "lts-v6.12.16-linux-250225T162742Z",
+            "sha256": "sha256-w8uSVD19rWTyEUJ2iwmU8FpjUTm/rnc50SfDO72du50=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "lts-v6.12.15-linux-250219T061943Z"
+        "version": "lts-v6.12.16-linux-250225T162742Z"
     },
     "linux-intel-mainline-tracking": {
         "cargoLocks": null,
@@ -440,7 +440,7 @@
     },
     "rime-essay": {
         "cargoLocks": null,
-        "date": "2025-02-26",
+        "date": "2025-03-03",
         "extract": null,
         "name": "rime-essay",
         "passthru": null,
@@ -450,13 +450,13 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "8950960f49a700af0bbcac3ce0cdadb190e719c6",
-            "sha256": "sha256-sCoh6iOqBfywaBx4RR47mqjsU+qTtJ3CYFH2ach5mTA=",
+            "rev": "e710bc393cc3893c7b0483e17a47469fd1645200",
+            "sha256": "sha256-ysIUxHaf7GTQ3gVNemmfvBGM2Kp5BKdhlMw+/xmQSW0=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/rime/rime-essay.git"
         },
-        "version": "8950960f49a700af0bbcac3ce0cdadb190e719c6"
+        "version": "e710bc393cc3893c7b0483e17a47469fd1645200"
     },
     "rime-ice": {
         "cargoLocks": null,
@@ -500,7 +500,7 @@
     },
     "rime-luna-pinyin": {
         "cargoLocks": null,
-        "date": "2025-02-24",
+        "date": "2025-03-03",
         "extract": null,
         "name": "rime-luna-pinyin",
         "passthru": null,
@@ -510,13 +510,13 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "308b8efc39917b99765e8a3792ad274aaabe5de1",
-            "sha256": "sha256-SZs4u09XqGfD8j4gz1N5fLTts79m0jIJ/asS2riplWA=",
+            "rev": "39a3116f854c3619c6043fe0068ddd7957712eba",
+            "sha256": "sha256-H8/Ad5uALDkkc5JrHToZuoYIru9G7jJ+harCqvl2dho=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/rime/rime-luna-pinyin.git"
         },
-        "version": "308b8efc39917b99765e8a3792ad274aaabe5de1"
+        "version": "39a3116f854c3619c6043fe0068ddd7957712eba"
     },
     "rime-pinyin-simp": {
         "cargoLocks": null,
@@ -682,11 +682,11 @@
     "swayosd": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./swayosd-993180b5e7db1dfc453a556bf208f05b04283c8f/Cargo.lock",
+                "./swayosd-b3c78fce3d90be2ce6a6ffee0e22a50379952e2b/Cargo.lock",
                 {}
             ]
         },
-        "date": "2025-01-27",
+        "date": "2025-03-03",
         "extract": null,
         "name": "swayosd",
         "passthru": null,
@@ -696,13 +696,13 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "993180b5e7db1dfc453a556bf208f05b04283c8f",
-            "sha256": "sha256-qwtGkRJlCYu+dO3xCmnRexX+E4QvXRAHXUslLO7mrAI=",
+            "rev": "b3c78fce3d90be2ce6a6ffee0e22a50379952e2b",
+            "sha256": "sha256-V3V18BoBRJU8mtvwWXvdYPbKBDIHdu5LzVSkDkGJjFU=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/ErikReider/SwayOSD.git"
         },
-        "version": "993180b5e7db1dfc453a556bf208f05b04283c8f"
+        "version": "b3c78fce3d90be2ce6a6ffee0e22a50379952e2b"
     },
     "synapse-s3-storage-provider": {
         "cargoLocks": null,
