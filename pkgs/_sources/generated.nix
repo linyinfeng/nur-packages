@@ -19,16 +19,16 @@
   };
   baibot = {
     pname = "baibot";
-    version = "v1.4.1";
+    version = "v1.5.0";
     src = fetchFromGitHub {
       owner = "etkecc";
       repo = "baibot";
-      rev = "v1.4.1";
+      rev = "v1.5.0";
       fetchSubmodules = false;
-      sha256 = "sha256-LeLdKedwyjSubZ5vEqI+YmqTsd5+Ai+2Pof/I9HpgNQ=";
+      sha256 = "sha256-DwhKeitbue6gz7cWcA8VJNa0AlKmS3OVHTBaXCy0WGE=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./baibot-v1.4.1/Cargo.lock;
+      lockFile = ./baibot-v1.5.0/Cargo.lock;
       outputHashes = {
 
       };
@@ -100,13 +100,13 @@
   };
   linux-intel-lts = {
     pname = "linux-intel-lts";
-    version = "lts-v6.12.15-linux-250219T061943Z";
+    version = "lts-v6.12.17-linux-250228T052357Z";
     src = fetchFromGitHub {
       owner = "intel";
       repo = "linux-intel-lts";
-      rev = "lts-v6.12.15-linux-250219T061943Z";
+      rev = "lts-v6.12.17-linux-250228T052357Z";
       fetchSubmodules = false;
-      sha256 = "sha256-ULPO3ZqSpkA4bb5FmeDZctOeJgUfIDbFcbyPuVWY1JE=";
+      sha256 = "sha256-MN/aV+7M60u8Y8LjQryKOm8LkVUIE7cugBR1oTgoDNc=";
     };
   };
   linux-intel-mainline-tracking = {
@@ -287,31 +287,31 @@
   };
   rime-essay = {
     pname = "rime-essay";
-    version = "8950960f49a700af0bbcac3ce0cdadb190e719c6";
+    version = "c392b8eae718a76262bd3cb10ea2de77eea7ce6d";
     src = fetchgit {
       url = "https://github.com/rime/rime-essay.git";
-      rev = "8950960f49a700af0bbcac3ce0cdadb190e719c6";
+      rev = "c392b8eae718a76262bd3cb10ea2de77eea7ce6d";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-sCoh6iOqBfywaBx4RR47mqjsU+qTtJ3CYFH2ach5mTA=";
+      sha256 = "sha256-LWbbvdQ5F+wutcr3z/009aQVRp/GUKTFlG4x1HTXh9M=";
     };
-    date = "2025-02-26";
+    date = "2025-03-08";
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "e3fd65b4f806e7e7e48402ea75d8e6def6281a86";
+    version = "7b140895ccfdda4a5d0a5c40470de0f701a1d236";
     src = fetchgit {
       url = "https://github.com/iDvel/rime-ice.git";
-      rev = "e3fd65b4f806e7e7e48402ea75d8e6def6281a86";
+      rev = "7b140895ccfdda4a5d0a5c40470de0f701a1d236";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-eAOkda8IdDKBgfXNVezlgA7BmyUortonlinHdCb/Tr4=";
+      sha256 = "sha256-cVZMz9BPrQiDU5p0uiR6ljSAaOgQThnaer/w/Vb/OiA=";
     };
-    date = "2025-02-24";
+    date = "2025-03-08";
   };
   rime-loengfan = {
     pname = "rime-loengfan";
@@ -329,17 +329,17 @@
   };
   rime-luna-pinyin = {
     pname = "rime-luna-pinyin";
-    version = "308b8efc39917b99765e8a3792ad274aaabe5de1";
+    version = "39a3116f854c3619c6043fe0068ddd7957712eba";
     src = fetchgit {
       url = "https://github.com/rime/rime-luna-pinyin.git";
-      rev = "308b8efc39917b99765e8a3792ad274aaabe5de1";
+      rev = "39a3116f854c3619c6043fe0068ddd7957712eba";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-SZs4u09XqGfD8j4gz1N5fLTts79m0jIJ/asS2riplWA=";
+      sha256 = "sha256-H8/Ad5uALDkkc5JrHToZuoYIru9G7jJ+harCqvl2dho=";
     };
-    date = "2025-02-24";
+    date = "2025-03-03";
   };
   rime-pinyin-simp = {
     pname = "rime-pinyin-simp";
@@ -452,23 +452,23 @@
   };
   swayosd = {
     pname = "swayosd";
-    version = "993180b5e7db1dfc453a556bf208f05b04283c8f";
+    version = "b3c78fce3d90be2ce6a6ffee0e22a50379952e2b";
     src = fetchgit {
       url = "https://github.com/ErikReider/SwayOSD.git";
-      rev = "993180b5e7db1dfc453a556bf208f05b04283c8f";
+      rev = "b3c78fce3d90be2ce6a6ffee0e22a50379952e2b";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-qwtGkRJlCYu+dO3xCmnRexX+E4QvXRAHXUslLO7mrAI=";
+      sha256 = "sha256-V3V18BoBRJU8mtvwWXvdYPbKBDIHdu5LzVSkDkGJjFU=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./swayosd-993180b5e7db1dfc453a556bf208f05b04283c8f/Cargo.lock;
+      lockFile = ./swayosd-b3c78fce3d90be2ce6a6ffee0e22a50379952e2b/Cargo.lock;
       outputHashes = {
 
       };
     };
-    date = "2025-01-27";
+    date = "2025-03-03";
   };
   synapse-s3-storage-provider = {
     pname = "synapse-s3-storage-provider";
