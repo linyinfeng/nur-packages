@@ -5,6 +5,7 @@
   meson,
   ninja,
   rustPlatform,
+  rustc,
   cargo,
   glib,
   sassc,
@@ -25,8 +26,8 @@ stdenv.mkDerivation {
   nativeBuildInputs = [
     meson
     rustPlatform.cargoSetupHook
-    rustPlatform.rust.rustc
-    rustPlatform.rust.cargo
+    rustc
+    cargo
     glib
     sassc
     pkg-config
@@ -48,6 +49,6 @@ stdenv.mkDerivation {
     description = "A GTK based on screen display for keyboard shortcuts like caps-lock and volume";
     license = licenses.gpl3;
     maintainers = with maintainers; [ yinfeng ];
-    broken = !(lib.versionAtLeast rustPlatform.rust.rustc.version "1.75");
+    broken = !(lib.versionAtLeast rustc.version "1.75");
   };
 }
