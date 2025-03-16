@@ -5,7 +5,6 @@
   meson,
   ninja,
   rustPlatform,
-  rustc,
   cargo,
   glib,
   sassc,
@@ -16,6 +15,7 @@
   gtk4-layer-shell,
   pulseaudio,
   libinput,
+  dbus,
 }:
 stdenv.mkDerivation {
   inherit (sources.swayosd) pname version src;
@@ -25,8 +25,8 @@ stdenv.mkDerivation {
   nativeBuildInputs = [
     meson
     rustPlatform.cargoSetupHook
-    rustc
-    cargo
+    rustPlatform.rust.rustc
+    rustPlatform.rust.cargo
     glib
     sassc
     pkg-config
@@ -38,6 +38,7 @@ stdenv.mkDerivation {
     gtk4-layer-shell
     pulseaudio
     libinput
+    dbus
   ];
 
   cargoDeps = rustPlatform.importCargoLock sources.swayosd.cargoLock."Cargo.lock";
@@ -47,6 +48,6 @@ stdenv.mkDerivation {
     description = "A GTK based on screen display for keyboard shortcuts like caps-lock and volume";
     license = licenses.gpl3;
     maintainers = with maintainers; [ yinfeng ];
-    broken = !(lib.versionAtLeast rustc.version "1.75");
+    broken = !(lib.versionAtLeast rustPlatform.rust.rustc.version "1.75");
   };
 }
