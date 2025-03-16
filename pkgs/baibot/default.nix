@@ -21,5 +21,6 @@ rustPlatform.buildRustPackage {
     description = "A Matrix bot for using different capabilities of AI/Large Language Models";
     license = licenses.agpl3Plus;
     maintainers = with maintainers; [ yinfeng ];
+    broken = !(lib.versionAtLeast rustPlatform.rust.rustc.version "1.85");
   };
 }
