@@ -1,5 +1,6 @@
 {
   callPackage,
+  go,
   buildGoModule,
   fetchFromGitHub,
   pkg-config,
@@ -58,6 +59,6 @@ buildGoModule rec {
     mainProgram = "EasyLPAC";
     license = licenses.mit;
     maintainers = with maintainers; [ yinfeng ];
-    broken = !(versionAtLeast (versions.majorMinor trivial.version) "24.11");
+    broken = !(lib.versionAtLeast go.version "1.24");
   };
 }
