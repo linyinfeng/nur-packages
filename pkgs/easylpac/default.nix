@@ -14,15 +14,15 @@
 
 buildGoModule rec {
   pname = "easylpac";
-  version = "0.7.7.2";
+  version = "0.7.8.2";
   src = fetchFromGitHub {
     owner = "creamlike1024";
     repo = "EasyLPAC";
     rev = version;
-    sha256 = "sha256-1oB6OkhmaVSBpXw1OJ+iyNt99Rv12eDdgVroItZ3ww0=";
+    sha256 = "sha256-eF5Rj2QxWPFZZUea3kkM/5PaRbHBset6jsRN8/zDf7Q=";
   };
   proxyVendor = true;
-  vendorHash = "sha256-h/vRooTwbv63WraH/kBLfnmbd68oE6OtyghfocqDuhA=";
+  vendorHash = "sha256-tX7abWGn1f4p+7vx2gDa5/NKg5SbWqMfHT8kbPwHK14=";
 
   postConfigure = ''
     cp --verbose "${./eum-registry.json}" eum-registry.json
