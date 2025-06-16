@@ -27,7 +27,7 @@ rustPlatform.buildRustPackage {
     description = "Niri taskbar module for Waybar";
     homepage = "https://github.com/LawnGnome/niri-taskbar";
     license = lib.licenses.mit;
-    maintainers = with lib.maintainers; [ linyinfeng ];
+    maintainers = with lib.maintainers; [ yinfeng ];
     broken = !(lib.versionAtLeast rustc.version "1.85");
   };
 }
