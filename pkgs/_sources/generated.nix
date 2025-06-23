@@ -132,6 +132,17 @@
       sha256 = "sha256-dxoYuX3dNj4piXQBqU4w1ICeyOGid35c+6ZITQiN6wA=";
     };
   };
+  ly2video = {
+    pname = "ly2video";
+    version = "v0.5.0";
+    src = fetchFromGitHub {
+      owner = "aspiers";
+      repo = "ly2video";
+      rev = "v0.5.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-4ARRCmz7uDKWVuY1LG98oAGV/S0BFo4DYyoWw9TlZoo=";
+    };
+  };
   mstickereditor = {
     pname = "mstickereditor";
     version = "v0.3.7";
