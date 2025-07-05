@@ -115,13 +115,13 @@
   };
   linux-intel-lts = {
     pname = "linux-intel-lts";
-    version = "lts-v6.12.34-linux-250619T163003Z";
+    version = "lts-v6.12.35-linux-250627T153524Z";
     src = fetchFromGitHub {
       owner = "intel";
       repo = "linux-intel-lts";
-      rev = "lts-v6.12.34-linux-250619T163003Z";
+      rev = "lts-v6.12.35-linux-250627T153524Z";
       fetchSubmodules = false;
-      sha256 = "sha256-AU6P7dDvkujJl1m86h4H253dMeMNE4dhdP710egXs/A=";
+      sha256 = "sha256-0UT9cmbXcSw1oGSaLoUzbLWfRNBUDeFcvdYmoej/fAE=";
     };
   };
   linux-intel-mainline-tracking = {
@@ -495,23 +495,23 @@
   };
   swayosd = {
     pname = "swayosd";
-    version = "ce1f34d80a7f8b4393a5551ea0535bd8beabb28c";
+    version = "bbff4efddb95275b8f3898efbd1be98bbef4c7df";
     src = fetchgit {
       url = "https://github.com/ErikReider/SwayOSD.git";
-      rev = "ce1f34d80a7f8b4393a5551ea0535bd8beabb28c";
+      rev = "bbff4efddb95275b8f3898efbd1be98bbef4c7df";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-Z9c/5jKxs5ctUuVu7g+BXA1Wy4lyZLpGATtj2jd84jI=";
+      sha256 = "sha256-ohAS0Gg57dPOzMRdx+eILC/NYZhJ1av9xTos72DE8Ck=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./swayosd-ce1f34d80a7f8b4393a5551ea0535bd8beabb28c/Cargo.lock;
+      lockFile = ./swayosd-bbff4efddb95275b8f3898efbd1be98bbef4c7df/Cargo.lock;
       outputHashes = {
 
       };
     };
-    date = "2025-04-20";
+    date = "2025-07-04";
   };
   synapse-s3-storage-provider = {
     pname = "synapse-s3-storage-provider";
