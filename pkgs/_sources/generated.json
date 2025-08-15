@@ -227,12 +227,12 @@
             "name": null,
             "owner": "estkme-group",
             "repo": "lpac",
-            "rev": "v2.2.1",
-            "sha256": "sha256-dxoYuX3dNj4piXQBqU4w1ICeyOGid35c+6ZITQiN6wA=",
+            "rev": "v2.3.0",
+            "sha256": "sha256-ALne5sHB6ff7cHAWe0rFwpP/Yz4EhZBiOrgdM2B8+OE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.2.1"
+        "version": "v2.3.0"
     },
     "ly2video": {
         "cargoLocks": null,

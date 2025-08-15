@@ -137,13 +137,13 @@
   };
   lpac = {
     pname = "lpac";
-    version = "v2.2.1";
+    version = "v2.3.0";
     src = fetchFromGitHub {
       owner = "estkme-group";
       repo = "lpac";
-      rev = "v2.2.1";
+      rev = "v2.3.0";
       fetchSubmodules = false;
-      sha256 = "sha256-dxoYuX3dNj4piXQBqU4w1ICeyOGid35c+6ZITQiN6wA=";
+      sha256 = "sha256-ALne5sHB6ff7cHAWe0rFwpP/Yz4EhZBiOrgdM2B8+OE=";
     };
   };
   ly2video = {
