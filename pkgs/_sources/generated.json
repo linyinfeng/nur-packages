@@ -255,6 +255,21 @@
         },
         "version": "v0.5.0"
     },
+    "moe-koe-music": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "moe-koe-music",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-UPNiA/jEbN/Hlx0W9Dnst78J4VOSRk/H0EAlBeJ92yk=",
+            "type": "url",
+            "url": "https://github.com/iAJue/MoeKoeMusic/releases/download/v1.5.0/MoeKoe_Music_v1.5.0.AppImage"
+        },
+        "version": "v1.5.0"
+    },
     "mstickereditor": {
         "cargoLocks": {
             "Cargo.lock": [

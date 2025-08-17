@@ -157,6 +157,14 @@
       sha256 = "sha256-4ARRCmz7uDKWVuY1LG98oAGV/S0BFo4DYyoWw9TlZoo=";
     };
   };
+  moe-koe-music = {
+    pname = "moe-koe-music";
+    version = "v1.5.0";
+    src = fetchurl {
+      url = "https://github.com/iAJue/MoeKoeMusic/releases/download/v1.5.0/MoeKoe_Music_v1.5.0.AppImage";
+      sha256 = "sha256-UPNiA/jEbN/Hlx0W9Dnst78J4VOSRk/H0EAlBeJ92yk=";
+    };
+  };
   mstickereditor = {
     pname = "mstickereditor";
     version = "v0.3.7";
