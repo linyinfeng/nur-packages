@@ -28,7 +28,7 @@
       sha256 = "sha256-qWJ4Z/ixqUq4rN06vq6JM+lJSovoh9DP1wB37C08Vt0=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./baibot-v1.8.1/Cargo.lock;
+      lockFile = ./. + "/sha256-qWJ4Z_ixqUq4rN06vq6JM+lJSovoh9DP1wB37C08Vt0=/Cargo.lock";
       outputHashes = {
         "async-openai-0.28.1" = "sha256-5xrO2k5jA94cf3Ub0DGuAvKqDDXVk1Ro/naC5FG1AAw=";
         "anthropic-0.0.8" = "sha256-q21o2GB8nN0jGcRPgW/cujC+3gdgQg5mFJUJy2tipCA=";
@@ -37,13 +37,13 @@
   };
   cowrie = {
     pname = "cowrie";
-    version = "v2.6.1";
+    version = "v2.7.0";
     src = fetchFromGitHub {
       owner = "cowrie";
       repo = "cowrie";
-      rev = "v2.6.1";
+      rev = "v2.7.0";
       fetchSubmodules = false;
-      sha256 = "sha256-owYce/gt8nyyl3K1PZ9PNAVFo5UZ3jE9JkONiQFOgDI=";
+      sha256 = "sha256-4BAyH7GPBTqbS7GKPhS1gqjW+H1d3pzDGXwCa7fty58=";
     };
   };
   dot-tar = {
@@ -59,7 +59,7 @@
       sha256 = "sha256-M5Qw/aUX7zwq15bpe+Ix1t7kfkFF/JIC1ngOwAtx7Tg=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./dot-tar-b5f1f3f37abd9f65dd75cc5e74d32e6356090534/Cargo.lock;
+      lockFile = ./. + "/sha256-M5Qw_aUX7zwq15bpe+Ix1t7kfkFF_JIC1ngOwAtx7Tg=/Cargo.lock";
       outputHashes = {
 
       };
@@ -176,7 +176,7 @@
       sha256 = "sha256-yLelr190my12Ff5JbJXV5fh7VgeqGu0VYe/Mw0mLoNo=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./mstickereditor-v0.3.7/Cargo.lock;
+      lockFile = ./. + "/sha256-yLelr190my12Ff5JbJXV5fh7VgeqGu0VYe_Mw0mLoNo=/Cargo.lock";
       outputHashes = {
 
       };
@@ -207,7 +207,7 @@
       sha256 = "sha256-Gbzh4OTkvtP9F/bfDUyA14NH2DMDdr3i6oFoFwinEAg=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./niri-taskbar-v0.3.0+niri.25.08/Cargo.lock;
+      lockFile = ./. + "/sha256-Gbzh4OTkvtP9F_bfDUyA14NH2DMDdr3i6oFoFwinEAg=/Cargo.lock";
       outputHashes = {
 
       };
@@ -436,17 +436,17 @@
   };
   rime-stroke = {
     pname = "rime-stroke";
-    version = "7c9874c6b2e0b94947653e9a7de6f99623ff27e4";
+    version = "a4dc0423c578bf5e15bea66103e082ee187a8737";
     src = fetchgit {
       url = "https://github.com/rime/rime-stroke.git";
-      rev = "7c9874c6b2e0b94947653e9a7de6f99623ff27e4";
+      rev = "a4dc0423c578bf5e15bea66103e082ee187a8737";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-YtvNSby7NmjTdGwk9aNT44SUitKfEbAg3QSwX9g7QtA=";
+      sha256 = "sha256-rNKPHz6eLgAYTdpWwxk7GE3APZXJ0Oc1lzHhRDDvRg0=";
     };
-    date = "2025-01-18";
+    date = "2025-09-20";
   };
   rime-terra-pinyin = {
     pname = "rime-terra-pinyin";
@@ -501,7 +501,7 @@
       sha256 = "sha256-Ibzax4AZCMEj10rJ8A47qek2Kd8U+idwTDvbHB8A1xo=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./rlt-v0.1.6/Cargo.lock;
+      lockFile = ./. + "/sha256-Ibzax4AZCMEj10rJ8A47qek2Kd8U+idwTDvbHB8A1xo=/Cargo.lock";
       outputHashes = {
 
       };
@@ -556,7 +556,7 @@
       sha256 = "sha256-I1saekIoRV/as3sVMUlfCpqLA6xHX5YdtRgIjuof1AU=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./tg-send-d3aea3f2dc37c39521ce59c5fb156427764ad68f/Cargo.lock;
+      lockFile = ./. + "/sha256-I1saekIoRV_as3sVMUlfCpqLA6xHX5YdtRgIjuof1AU=/Cargo.lock";
       outputHashes = {
 
       };
@@ -604,7 +604,7 @@
       sha256 = "sha256-TL0bgzQgge6j1SpZCdxv/s4pBMSg4/3U5QisjkVE6BE=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./zeronsd-v0.5.2/Cargo.lock;
+      lockFile = ./. + "/sha256-TL0bgzQgge6j1SpZCdxv_s4pBMSg4_3U5QisjkVE6BE=/Cargo.lock";
       outputHashes = {
 
       };
