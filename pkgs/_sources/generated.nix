@@ -37,13 +37,13 @@
   };
   cowrie = {
     pname = "cowrie";
-    version = "v2.7.0";
+    version = "v2.8.1";
     src = fetchFromGitHub {
       owner = "cowrie";
       repo = "cowrie";
-      rev = "v2.7.0";
+      rev = "v2.8.1";
       fetchSubmodules = false;
-      sha256 = "sha256-4BAyH7GPBTqbS7GKPhS1gqjW+H1d3pzDGXwCa7fty58=";
+      sha256 = "sha256-/8yJaBAlHZMu7YUgtu2GCkMplF8Ln/hZGVqCiCfT4CY=";
     };
   };
   dot-tar = {
@@ -458,17 +458,17 @@
   };
   rime-terra-pinyin = {
     pname = "rime-terra-pinyin";
-    version = "9e7673360c5dc9d945e2ba3f167833bb9217ca6a";
+    version = "11878613ea12c2199b3aa71e320491f468e1fc7d";
     src = fetchgit {
       url = "https://github.com/rime/rime-terra-pinyin.git";
-      rev = "9e7673360c5dc9d945e2ba3f167833bb9217ca6a";
+      rev = "11878613ea12c2199b3aa71e320491f468e1fc7d";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-DMTVdwjR1Q5wtODrrBTQOWlGokmqhBF+N0yDbYdJERI=";
+      sha256 = "sha256-Tluiw/VEnPmjZ3OaqvZqeG+TwLr5txN0iuoOBoFzTj0=";
     };
-    date = "2025-07-22";
+    date = "2025-10-09";
   };
   rime-wubi = {
     pname = "rime-wubi";
@@ -528,13 +528,13 @@
   };
   synapse-s3-storage-provider = {
     pname = "synapse-s3-storage-provider";
-    version = "v1.5.0";
+    version = "v1.6.0";
     src = fetchFromGitHub {
       owner = "matrix-org";
       repo = "synapse-s3-storage-provider";
-      rev = "v1.5.0";
+      rev = "v1.6.0";
       fetchSubmodules = false;
-      sha256 = "sha256-Nv8NkzOcUDX17N7Lyx/NT1vXztiRNaTYIAWNPHxgxJ4=";
+      sha256 = "sha256-aeacw6Fpv4zFhZI4LdsJiV2pcOAMv3aV5CicnwYRxw8=";
     };
   };
   telegram-send = {
