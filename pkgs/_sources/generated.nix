@@ -37,13 +37,13 @@
   };
   cowrie = {
     pname = "cowrie";
-    version = "v2.7.0";
+    version = "v2.8.1";
     src = fetchFromGitHub {
       owner = "cowrie";
       repo = "cowrie";
-      rev = "v2.7.0";
+      rev = "v2.8.1";
       fetchSubmodules = false;
-      sha256 = "sha256-4BAyH7GPBTqbS7GKPhS1gqjW+H1d3pzDGXwCa7fty58=";
+      sha256 = "sha256-/8yJaBAlHZMu7YUgtu2GCkMplF8Ln/hZGVqCiCfT4CY=";
     };
   };
   dot-tar = {
@@ -68,13 +68,13 @@
   };
   dpt-rp1-py = {
     pname = "dpt-rp1-py";
-    version = "v0.1.16";
+    version = "v0.1.18";
     src = fetchFromGitHub {
       owner = "janten";
       repo = "dpt-rp1-py";
-      rev = "v0.1.16";
+      rev = "v0.1.18";
       fetchSubmodules = false;
-      sha256 = "sha256-cq9yHBQyqzlEb1Dvpx90MIixT8PxB8TBKv3+nFYCbn8=";
+      sha256 = "sha256-5Ny62Kp1GHH9vmPSZ6smNqyEt9PZYPHAiungHZQMB/A=";
     };
   };
   gnome-shell-mobile-shell = {
@@ -115,13 +115,13 @@
   };
   linux-intel-lts = {
     pname = "linux-intel-lts";
-    version = "lts-v6.12.48-linux-250924T142248Z";
+    version = "lts-v6.12.53-linux-251015T221309Z";
     src = fetchFromGitHub {
       owner = "intel";
       repo = "linux-intel-lts";
-      rev = "lts-v6.12.48-linux-250924T142248Z";
+      rev = "lts-v6.12.53-linux-251015T221309Z";
       fetchSubmodules = false;
-      sha256 = "sha256-479uMPFKkgNnyg/3/ByOvYP4mcFQa9Iz//6djWvBLLY=";
+      sha256 = "sha256-kAcX5aQfmmNvvdpjJfLok6JcE2l+2vvTbg7P5kpngx0=";
     };
   };
   linux-intel-mainline-tracking = {
@@ -346,31 +346,31 @@
   };
   rime-essay = {
     pname = "rime-essay";
-    version = "15cf21fb3a0113c981ed2e45fdc479a622ae8480";
+    version = "73b4ffd73ad583108849bb4055a6dd6174113b0e";
     src = fetchgit {
       url = "https://github.com/rime/rime-essay.git";
-      rev = "15cf21fb3a0113c981ed2e45fdc479a622ae8480";
+      rev = "73b4ffd73ad583108849bb4055a6dd6174113b0e";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-/6f9iTdUNOni3cEygwrwjabpi1/2xM0WWL7lMROdwuU=";
+      sha256 = "sha256-NWdU0Oyr1nMDk+PR+29e9CWlH+jtKynMmwiwLjBSMZo=";
     };
-    date = "2025-09-05";
+    date = "2025-10-13";
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "11fa56f4f4568198ab40847b2ec470bde91c864b";
+    version = "cf5cca2feb763845765b231688c38a2ba8fea3c7";
     src = fetchgit {
       url = "https://github.com/iDvel/rime-ice.git";
-      rev = "11fa56f4f4568198ab40847b2ec470bde91c864b";
+      rev = "cf5cca2feb763845765b231688c38a2ba8fea3c7";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-bZ4ojoC2uL8MR5IO7TaAkwQKplRU/poAaHouY5Ruq5Q=";
+      sha256 = "sha256-rZsmlOwokB3Sf+Z/aP19r08v93MDlcFHLHxq2Q8En98=";
     };
-    date = "2025-10-06";
+    date = "2025-10-14";
   };
   rime-loengfan = {
     pname = "rime-loengfan";
@@ -458,17 +458,17 @@
   };
   rime-terra-pinyin = {
     pname = "rime-terra-pinyin";
-    version = "9e7673360c5dc9d945e2ba3f167833bb9217ca6a";
+    version = "11878613ea12c2199b3aa71e320491f468e1fc7d";
     src = fetchgit {
       url = "https://github.com/rime/rime-terra-pinyin.git";
-      rev = "9e7673360c5dc9d945e2ba3f167833bb9217ca6a";
+      rev = "11878613ea12c2199b3aa71e320491f468e1fc7d";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-DMTVdwjR1Q5wtODrrBTQOWlGokmqhBF+N0yDbYdJERI=";
+      sha256 = "sha256-Tluiw/VEnPmjZ3OaqvZqeG+TwLr5txN0iuoOBoFzTj0=";
     };
-    date = "2025-07-22";
+    date = "2025-10-09";
   };
   rime-wubi = {
     pname = "rime-wubi";
@@ -528,13 +528,13 @@
   };
   synapse-s3-storage-provider = {
     pname = "synapse-s3-storage-provider";
-    version = "v1.5.0";
+    version = "v1.6.0";
     src = fetchFromGitHub {
       owner = "matrix-org";
       repo = "synapse-s3-storage-provider";
-      rev = "v1.5.0";
+      rev = "v1.6.0";
       fetchSubmodules = false;
-      sha256 = "sha256-Nv8NkzOcUDX17N7Lyx/NT1vXztiRNaTYIAWNPHxgxJ4=";
+      sha256 = "sha256-aeacw6Fpv4zFhZI4LdsJiV2pcOAMv3aV5CicnwYRxw8=";
     };
   };
   telegram-send = {
