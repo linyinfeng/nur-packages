@@ -212,6 +212,26 @@
       };
     };
   };
+  otf2psf = {
+    pname = "otf2psf";
+    version = "10296b40cf2b1ff80d08f55699c3d21ec8693b99";
+    src = fetchgit {
+      url = "https://github.com/pcarrin2/otf2psf.git";
+      rev = "10296b40cf2b1ff80d08f55699c3d21ec8693b99";
+      fetchSubmodules = true;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
+      sha256 = "sha256-x+8ZgMLoP0Rchi5aVrn+kIYc2GEFwjvY1zhNXxkIk/0=";
+    };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./. + "/sha256-x+8ZgMLoP0Rchi5aVrn+kIYc2GEFwjvY1zhNXxkIk_0=/Cargo.lock";
+      outputHashes = {
+
+      };
+    };
+    date = "2025-05-14";
+  };
   plugin-bang-bang = {
     pname = "plugin-bang-bang";
     version = "ec991b80ba7d4dda7a962167b036efc5c2d79419";

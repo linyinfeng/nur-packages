@@ -341,6 +341,31 @@
         },
         "version": "v0.4.0+niri.25.11"
     },
+    "otf2psf": {
+        "cargoLock": {
+            "Cargo.lock": [
+                "sha256-x+8ZgMLoP0Rchi5aVrn+kIYc2GEFwjvY1zhNXxkIk_0=/Cargo.lock",
+                {}
+            ]
+        },
+        "date": "2025-05-14",
+        "extract": null,
+        "name": "otf2psf",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": true,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "10296b40cf2b1ff80d08f55699c3d21ec8693b99",
+            "sha256": "sha256-x+8ZgMLoP0Rchi5aVrn+kIYc2GEFwjvY1zhNXxkIk/0=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/pcarrin2/otf2psf.git"
+        },
+        "version": "10296b40cf2b1ff80d08f55699c3d21ec8693b99"
+    },
     "plugin-bang-bang": {
         "cargoLock": null,
         "date": "2023-07-23",
