@@ -73,6 +73,11 @@ let
       };
     }
     {
+      "deepseek-reasonix" = {
+        "reasonix" = "reasonix";
+      };
+    }
+    {
       "easylpac" = {
         "EasyLPAC" = "EasyLPAC";
       };

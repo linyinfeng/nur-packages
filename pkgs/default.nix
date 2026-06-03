@@ -61,6 +61,7 @@ lib.makeScope newScope (
     vlmcsd = callPackage ./vlmcsd { };
     yacd = callPackage ./yacd { };
     zeronsd = callPackage ./zeronsd { };
+    deepseek-reasonix = callPackage ./deepseek-reasonix { };
     # keep-sorted end
   }
 )
