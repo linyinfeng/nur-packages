@@ -26,6 +26,7 @@ lib.makeScope newScope (
     baibot = callPackage ./baibot { };
     canokey-udev-rules = callPackage ./canokey-udev-rules { };
     cf-terraforming = callPackage ./cf-terraforming { };
+    deepseek-reasonix = callPackage ./deepseek-reasonix { };
     dot-tar = callPackage ./dot-tar { };
     dpt-rp1-py = callPackage ./dpt-rp1-py { };
     easylpac = callPackage ./easylpac { };
@@ -61,7 +62,6 @@ lib.makeScope newScope (
     vlmcsd = callPackage ./vlmcsd { };
     yacd = callPackage ./yacd { };
     zeronsd = callPackage ./zeronsd { };
-    deepseek-reasonix = callPackage ./deepseek-reasonix { };
     # keep-sorted end
   }
 )
