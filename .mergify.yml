@@ -1,9 +1,15 @@
+merge_queue:
+  # Fast-forward only stays linear when the queue checks in place; otherwise it
+  # lands a draft batch branch, which can carry merge commits. In-place checks
+  # need max_parallel_checks 1 (default 5), batch_size 1 and single-step CI.
+  max_parallel_checks: 1
+
 queue_rules:
   - name: default
-    # No queue_conditions: a maintainer enters the queue on demand with
-    # Mergify's check box (or `@mergifyio queue`), and the automated update PR
-    # is queued by the pull request rule below.
-    merge_conditions:
+    # No queue_conditions on labels: a maintainer enters the queue on demand with
+    # Mergify's check box (or `@mergifyio queue`), and the automated update PR is
+    # queued by the pull request rule below.
+    queue_conditions:
       # `#check-pending=0` is deliberately not used: Mergify's own merge queue
       # check run stays in progress for as long as the pull request is queued, so
       # that condition never becomes true and the pull request is dequeued.
@@ -14,8 +20,9 @@ queue_rules:
       - "#check-failure=0"
       - "check-success=ci-gate"
       - "check-success=tests-gate"
-    merge_method: merge
-    update_method: merge
+    batch_size: 1
+    update_method: rebase
+    merge_method: fast-forward
 
 pull_request_rules:
   - name: Queue automated update PRs
